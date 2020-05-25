@@ -1,0 +1,201 @@
+body {
+    background-image: url("../img/background_MTG.png");
+    background-size: 1440px 1000px !important;
+    background-color: #242323;
+    font-family: Brown;
+    color: #ffffff;
+}
+
+.content{
+    max-width: 70%;
+    min-width: 10%;
+    margin: auto;
+    position: relative;
+}
+
+.topnav {
+    background-color: royalblue;
+    display: inline;
+    position:absolute;
+    left:0%;
+    top:0%;
+    padding: 0px;
+    width:100%;
+}
+
+.topnav img {
+    margin: 24px 15px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: royalblue;
+    position:absolute;
+    left:0%;
+    top:0% !important;
+    width:100%;
+}
+
+label{
+    font-size: large;
+    left: 0;
+}
+
+input{
+
+    height: 30px;
+    background-color: #242323;
+    color: #ffffff;
+    font-family: Brown;
+    font-size: large;
+}
+
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: royalblue;
+    color: white;
+    border-radius: 100px;
+    font-family: Brown;
+}
+.button:hover {
+    background-color: white;
+    color: royalblue;
+}
+
+.button2 {
+    border: none;
+    color: royalblue;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100px;
+    font-family: Brown;
+    border: 1px solid royalblue;
+}
+
+.button2:hover {
+    background-color: #4a76ff;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn {
+    border: 1px solid #242323;
+    background-color: #242323;
+    color: royalblue;
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+    display: inline-block;
+    margin-left: 20px;
+    /*margin-top: -72px;*/
+    /*padding-left: -50px !important;*/
+}
+.btn:hover {
+    background-color: white;
+    color: royalblue;
+}
+
+
+.leftButton{
+    float: left;
+    margin-left: 60px;
+}
+
+.rightButton{
+    float: right;
+    margin-right: 60px;
+}
+
+.plusButton{
+    float: right;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 100%;
+    padding: 10px 15px;
+
+}
+
+.minusButton{
+    float: left;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 100%;
+    padding: 10px 15px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+
+}
+.column2 {
+    float: left;
+    width: 50%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center-block {
+    margin: auto;
+    display: block;
+}
+
+.dice{
+    border: 2px solid royalblue;
+    min-width: 60px !important;
+    max-height: 40px !important;
+    text-align: center;
+    padding-top: 2%;
+    background-color: #302f2f;
+}
+
+.lifeBox{
+    border: 2px solid royalblue;
+    background-color: royalblue;
+    min-height: 150px;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 5%;
+
+
+}
+
+.divtoappend{
+    display: block;
+}
+
+

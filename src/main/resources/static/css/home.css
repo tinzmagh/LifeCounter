@@ -1,0 +1,127 @@
+body {
+    background-image: url("../img/background_MTG.png");
+    background-size: 1440px 1000px !important;
+    background-color: #242323;
+    font-family: Brown;
+    color: #ffffff;
+}
+
+select{
+    height:30px;
+    font-family: Brown;
+    font-size: 16px;
+}
+
+label{
+    font-family: "DK Longreach";
+    font-size: 60px !important;
+    color: royalblue;
+    padding: 30px 20px;
+}
+
+input{
+    font-size: 15px;
+    padding: 2px 2px;
+}
+
+.content{
+    margin: 0 auto;
+    padding-top: -20px;
+    max-width: 400px;
+    min-width: 300px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    /*margin: auto;*/
+    /*position: relative;*/
+}
+.blackBox{
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    /*background-color: #1b1a1a;*/
+    /*margin: auto;*/
+    /*position: relative;*/
+}
+
+.topnav {
+    background-color: royalblue;
+    display: inline;
+    position:absolute;
+    left:0%;
+    top:0%;
+    padding: 0px;
+    width:100%;
+}
+
+.topnav img {
+    margin: 24px 15px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: royalblue;
+    position:absolute;
+    left:0%;
+    top:0% !important;
+    width:100%;
+}
+
+label{
+    font-size: xx-large;
+    left: 0;
+}
+
+input{
+
+    height: 30px;
+    padding-left: 5%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: royalblue;
+    color: white;
+    border-radius: 100px;
+    font-family: Brown;
+}
+
+/*.button1 {*/
+    /*background-color: royalblue;*/
+    /*color: white;*/
+/*}*/
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid royalblue;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

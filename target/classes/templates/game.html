@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Counter</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/game.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="topnav">
+    <img src="/img/life_counter.png" height="70"/>
+</div>
+<br>
+<br>
+<br>
+
+
+<p id="Players" style="visibility: hidden;"></p>
+<p id="lifeOutput" style="visibility: hidden;"></p>
+
+
+<div class="content">
+    <div class="row">
+        <div class="divtoappend"></div>
+    </div>
+    <br>
+    <div class="center">
+        <h3 class="dice" id="rollNo" style="width: 55px; height: 55px;"></h3>
+    </div>
+    <br>
+    <div class="center">
+        <button onclick="rollDice()" type="button" class="button">Roll Dice</button>
+    </div>
+    <br>
+    <br>
+</div>
+
+    <div class="row">
+
+
+        <div class="column2">
+            <div class="center">
+                <button onclick="location.href='/'" type="button" class="button">New Game</button>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="center">
+                <button onclick="resetLife()" type="button" class="button">Reset Life</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+
+    // Retrieve stored values from first page
+    var originalPlayer = document.getElementById("Players").innerHTML = localStorage.getItem("Players");
+    var originalLife = document.getElementById("lifeOutput").innerHTML = localStorage.getItem("lifeOutput");
+
+    function rollDice() {
+        var players = parseInt(document.getElementById("Players").innerHTML = localStorage.getItem("Players"));
+        var randomNumber = Math.floor(Math.random() * players) + 1;
+        $('h3#rollNo').text(randomNumber);
+    }
+
+    function resetLife(){
+        if (originalPlayer) {
+            for (var i = 0; i < originalPlayer; i++) {
+                $('h1#lifeAmount' + (i + 1).toString()).text(originalLife);
+            }
+        }
+        $.ajax({
+            type: 'POST',
+            url: '/reset-Life',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                console.log("life reset " + data);
+            }
+        });
+    }
+
+    function minusLife(id, name) {
+        console.log(id);
+        console.log(name)
+
+        if (id == "minusPlayer1") {
+            var newValue = parseInt($('h1#lifeAmount1').text());
+            if (newValue != 0) {
+                newValue = newValue - 1;
+                $('h1#lifeAmount1').text(newValue);
+            }
+        }
+        if (id == "minusPlayer2") {
+            var newValue = parseInt($('h1#lifeAmount2').text());
+            if (newValue != 0) {
+                newValue = newValue - 1;
+                $('h1#lifeAmount2').text(newValue);
+            }
+        }
+        if (id == "minusPlayer3") {
+            var newValue = parseInt($('h1#lifeAmount3').text());
+            if (newValue != 0) {
+                newValue = newValue - 1;
+                $('h1#lifeAmount3').text(newValue);
+            }
+        }
+        if (id == "minusPlayer4") {
+            var newValue = parseInt($('h1#lifeAmount4').text());
+            if (newValue != 0) {
+                newValue = newValue - 1;
+                $('h1#lifeAmount4').text(newValue);
+            }
+        }
+        if (id == "minusPlayer5") {
+            var newValue = parseInt($('h1#lifeAmount5').text());
+            if (newValue != 0) {
+                newValue = newValue - 1;
+                $('h1#lifeAmount5').text(newValue);
+            }
+        }
+        if (id == "minusPlayer6") {
+            var newValue = parseInt($('h1#lifeAmount6').text());
+            if (newValue != 0) {
+                newValue = newValue - 1;
+                $('h1#lifeAmount6').text(newValue);
+            }
+        }
+        $.ajax({
+            type: 'POST',
+            url: '/remove-Life',
+            data: {'player': name},
+            dataType: 'json',
+            success: function (data) {
+                console.log("life removed " + data);
+            }
+        });
+
+    }
+
+    function plusLife(id, name) {
+        console.log(id);
+        console.log(name);
+        if (id == "plusPlayer1") {
+            var newValue = parseInt($('h1#lifeAmount1').text());
+            if (newValue != -1) {
+                newValue = newValue + 1;
+                $('h1#lifeAmount1').text(newValue);
+            }
+        }
+        if (id == "plusPlayer2") {
+            var newValue = parseInt($('h1#lifeAmount2').text());
+            if (newValue != -1) {
+                newValue = newValue + 1;
+                $('h1#lifeAmount2').text(newValue);
+            }
+        }
+        if (id == "plusPlayer3") {
+            var newValue = parseInt($('h1#lifeAmount3').text());
+            if (newValue != -1) {
+                newValue = newValue + 1;
+                $('h1#lifeAmount3').text(newValue);
+            }
+        }
+        if (id == "plusPlayer4") {
+            var newValue = parseInt($('h1#lifeAmount4').text());
+            if (newValue != -1) {
+                newValue = newValue + 1;
+                $('h1#lifeAmount4').text(newValue);
+            }
+        }
+        if (id == "plusPlayer5") {
+            var newValue = parseInt($('h1#lifeAmount5').text());
+            if (newValue != -1) {
+                newValue = newValue + 1;
+                $('h1#lifeAmount5').text(newValue);
+            }
+        }
+        if (id == "plusPlayer6") {
+            var newValue = parseInt($('h1#lifeAmount6').text());
+            if (newValue != -1) {
+                newValue = newValue + 1;
+                $('h1#lifeAmount6').text(newValue);
+            }
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: '/add-Life',
+            data: {'player': name},
+            dataType: 'json',
+            success: function (data) {
+                console.log("life added " + data);
+            }
+        });
+
+    }
+
+
+
+    function loadPlayers() {
+        var playersAmount = document.getElementById("Players").innerHTML = localStorage.getItem("Players");
+        var lifeAmount = parseInt(document.getElementById("lifeOutput").innerHTML = localStorage.getItem("lifeOutput"));
+        $('.divtoappend').html("");
+        if (playersAmount) {
+            for (var i = 0; i < playersAmount; i++) {
+                $('.divtoappend').append("<div class='column'>" +
+                    "<div class='center'>"+
+                    "<p name='playerName' id='playerName" + (i + 1).toString() + "' style='text-align: center; font-size: 30px; font-family: \"DK Longreach\";'></p>" +
+                    "<input name='playerInput' id='playerInput" + (i + 1).toString() + "' class='center-block' style='width: 110px; margin-top: 30px; margin-bottom: 30px; margin-left: 0px;margin-right: -10px;text-align: center; display: none;' value='Player " + (i + 1).toString() + "'>" +
+                    "<button class='btn' id='editBtn" + (i + 1).toString() + "' onclick='changeName(this.id)'><i class='fa fa-edit'></i></button>" +
+                    "<button class='btn' id='okBtn" + (i + 1).toString() + "' style='display: none;' name='Player " + (i + 1).toString() +"' onclick='setName(this.id, this.name)'><i class='fa fa-check-circle'></i></button>" +
+                    "</div>" +
+                    "<br>" +
+                    "<div class='center'>" +
+                    "<div class='lifeBox'>" +
+                    "<p style='margin-bottom: -40px; font-size: 30px; font-family: \"DK Longreach\";'>LIFE</p>" +
+                    "<h1 style='line-height: 150px;' id='lifeAmount" + (i + 1).toString() + "'></h1> " +
+                    "<button class='button2 minusButton' id='minusPlayer" + (i + 1).toString() + "' name='Player " + (i + 1).toString() +"' onclick='minusLife(this.id, this.name)'>-</button>" +
+                    "<button class='button2 plusButton' id='plusPlayer" + (i + 1).toString() + "' name='Player " + (i + 1).toString() +"' onclick='plusLife(this.id, this.name)'>+</button>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>")
+                $('h1#lifeAmount' + (i + 1).toString()).text(lifeAmount);
+                $('p#playerName'+ (i + 1).toString()).text("Player " + (i+1));
+
+
+            }
+        }
+    }
+
+
+    // Er igang med at skulle kunne ændre navn. Skal have fat i et ID, men kan kun få fat i knappens ID og ikke p-tagets ID?? YOU GOU GIRL <3
+    function changeName(id){
+        if(id == 'editBtn1'){
+            document.getElementById('playerName1').style.display = 'none';
+            document.getElementById('playerInput1').style.display = 'block';
+            document.getElementById('editBtn1').style.display = 'none';
+            document.getElementById('okBtn1').style.display = 'block';
+        }
+        if(id == 'editBtn2'){
+            document.getElementById('playerName2').style.display = 'none';
+            document.getElementById('playerInput2').style.display = 'block';
+            document.getElementById('editBtn2').style.display = 'none';
+            document.getElementById('okBtn2').style.display = 'block';
+        }
+        if(id == 'editBtn3'){
+            document.getElementById('playerName3').style.display = 'none';
+            document.getElementById('playerInput3').style.display = 'block';
+            document.getElementById('editBtn3').style.display = 'none';
+            document.getElementById('okBtn3').style.display = 'block';
+        }
+        if(id == 'editBtn4'){
+            document.getElementById('playerName4').style.display = 'none';
+            document.getElementById('playerInput4').style.display = 'block';
+            document.getElementById('editBtn4').style.display = 'none';
+            document.getElementById('okBtn4').style.display = 'block';
+        }
+        if(id == 'editBtn5'){
+            document.getElementById('playerName5').style.display = 'none';
+            document.getElementById('playerInput5').style.display = 'block';
+            document.getElementById('editBtn5').style.display = 'none';
+            document.getElementById('okBtn5').style.display = 'block';
+        }
+        if(id == 'editBtn6'){
+            document.getElementById('playerName6').style.display = 'none';
+            document.getElementById('playerInput6').style.display = 'block';
+            document.getElementById('editBtn6').style.display = 'none';
+            document.getElementById('okBtn6').style.display = 'block';
+        }
+    }
+
+    function setName(id, name){
+        if(id == 'okBtn1'){
+            var input = $('input#playerInput1').val();
+            $('p#playerName1').text(input);
+            document.getElementById('playerInput1').style.display = 'none';
+            document.getElementById('playerName1').style.display = 'block';
+            document.getElementById('editBtn1').style.display = 'block';
+            document.getElementById('okBtn1').style.display = 'none';
+        }
+
+        if(id == 'okBtn2'){
+            var input = $('input#playerInput2').val();
+            $('p#playerName2').text(input);
+            document.getElementById('playerInput2').style.display = 'none';
+            document.getElementById('playerName2').style.display = 'block';
+            document.getElementById('editBtn2').style.display = 'block';
+            document.getElementById('okBtn2').style.display = 'none';
+        }
+
+        if(id == 'okBtn3'){
+            var input = $('input#playerInput3').val();
+            $('p#playerName3').text(input);
+            document.getElementById('playerInput3').style.display = 'none';
+            document.getElementById('playerName3').style.display = 'block';
+            document.getElementById('editBtn3').style.display = 'block';
+            document.getElementById('okBtn3').style.display = 'none';
+        }
+
+        if(id == 'okBtn4'){
+            var input = $('input#playerInput4').val();
+            $('p#playerName4').text(input);
+            document.getElementById('playerInput4').style.display = 'none';
+            document.getElementById('playerName4').style.display = 'block';
+            document.getElementById('editBtn4').style.display = 'block';
+            document.getElementById('okBtn4').style.display = 'none';
+        }
+
+        if(id == 'okBtn5'){
+            var input = $('input#playerInput5').val();
+            $('p#playerName5').text(input);
+            document.getElementById('playerInput5').style.display = 'none';
+            document.getElementById('playerName5').style.display = 'block';
+            document.getElementById('editBtn5').style.display = 'block';
+            document.getElementById('okBtn5').style.display = 'none';
+        }
+
+        if(id == 'okBtn6'){
+            var input = $('input#playerInput6').val();
+            $('p#playerName6').text(input);
+            document.getElementById('playerInput6').style.display = 'none';
+            document.getElementById('playerName6').style.display = 'block';
+            document.getElementById('editBtn6').style.display = 'block';
+            document.getElementById('okBtn6').style.display = 'none';
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: '/add-Name',
+            data: {'player': name, 'name': input},
+            dataType: 'json',
+            success: function (data) {
+                console.log("adding name: " + data);
+            }
+        });
+    }
+
+
+    $(document).ready(loadPlayers);
+
+</script>
+</html>
+<!--"<input  class='center-block' type='number' id='life' style='text-align: center' value='40'> "-->
