@@ -31,38 +31,41 @@ class GameTest {
     @Test
     void addPlayers() {
 
-
-         ArrayList<Integer> invalidInputs = new ArrayList<Integer>( Arrays.asList(-1, 0, 7, 50));
-        ArrayList<String> invalidOutputs = new ArrayList<String>( Arrays.asList("Maximum amount of players is 6", "Maximum amount of players is 6", "Maximum amount of players is 6", "Maximum amount of players is 6"));
-
-
-        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(1, 4, 6));
-        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(1, 4, 6));
-
+        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
+        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
 
         Game game = new Game();
 
-        int i;
-
-        for(i = 0; i<validInputs.size(); i++) {
+        for(int i = 0; i<validInputs.size(); i++) {
             assertEquals(game.addPlayers(validInputs.get(i)), validOutputs.get(i));
             game.setPlayerAmount(0);
         }
 
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> game.addPlayers(-1));
+        Throwable exception1 = assertThrows(IllegalArgumentException.class, () -> game.addPlayers(-1));
+        Throwable exception2 = assertThrows(IllegalArgumentException.class, () -> game.addPlayers(0));
+        Throwable exception3 = assertThrows(IllegalArgumentException.class, () -> game.addPlayers(7));
 
-//        for(i = 0; i<invalidInputs.size(); i++) {
-//            assertEquals(game.addPlayers(invalidInputs.get(i)), invalidOutputs.get(i));
-//            game.setPlayerAmount(0);
-//        }
-
-
-
+        assertEquals("Maximum amount of players is 6", exception1.getMessage());
+        assertEquals("Maximum amount of players is 6", exception2.getMessage());
+        assertEquals("Maximum amount of players is 6", exception3.getMessage());
 
     }
 
     @Test
     void addStartLife() {
+
+        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(1, 2, 50, 99, 100));
+        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(1, 2, 50, 99, 100));
+
+        Game game = new Game();
+
+        for(int i = 0; i<validInputs.size(); i++) {
+            assertEquals(game.addStartLife(validInputs.get(i)), validOutputs.get(i));
+            game.setStartLife(0);
+        }
+
+
+
     }
 
     @Test
