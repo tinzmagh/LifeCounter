@@ -83,7 +83,7 @@ public class Game {
             setStartLife(lifeInput);
         }
         else{
-            IllegalArgumentException exception = new IllegalArgumentException("Please select a start life between 0-500");
+            IllegalArgumentException exception = new IllegalArgumentException("Please select a start life between 1-100");
             throw exception;
         }
         System.out.println("Start life set to: " + life);

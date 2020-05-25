@@ -64,6 +64,14 @@ class GameTest {
             game.setStartLife(0);
         }
 
+        Throwable exception1 = assertThrows(IllegalArgumentException.class, () -> game.addStartLife(-1));
+        Throwable exception2 = assertThrows(IllegalArgumentException.class, () -> game.addStartLife(0));
+        Throwable exception3 = assertThrows(IllegalArgumentException.class, () -> game.addStartLife(7));
+
+        assertEquals("Maximum amount of players is 6", exception1.getMessage());
+        assertEquals("Maximum amount of players is 6", exception2.getMessage());
+        assertEquals("Maximum amount of players is 6", exception3.getMessage());
+
 
 
     }
