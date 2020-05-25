@@ -8,6 +8,8 @@ public class Game {
 
 
     public int playerAmount;
+
+
     public int startLife;
     public int life;
     public String name;
@@ -42,6 +44,10 @@ public class Game {
         this.playerAmount = playerAmount;
     }
 
+    public int getPlayerAmount() {
+        return playerAmount;
+    }
+
 
 
     public Game() {
@@ -49,15 +55,20 @@ public class Game {
 
     public int addPlayers(int playerInput){
 
-        for (int i = 0; i < playerInput; i++) {
+        if(playerInput <= 6 && playerInput > 0){
 
-            if(playerInput <= 6 && playerInput > 0){
-
+            for (int i = 0; i < playerInput; i++) {
                 playerLife.put("Player " + (i + 1), getLife());
                 playerNames.put("Player " + (i + 1), "Player " + (i + 1));
             }
-            setPlayerAmount(playerInput);
         }
+        else{
+            IllegalArgumentException exception = new IllegalArgumentException("Maximum amount of players is 6");
+            System.out.println("Maximum amount of players is 6");
+            throw exception;
+        }
+
+        setPlayerAmount(playerInput);
         System.out.println(playerInput + " players added");
         System.out.println(getPlayerLife());
         return playerInput;
@@ -73,7 +84,6 @@ public class Game {
         }
         else{
             IllegalArgumentException exception = new IllegalArgumentException("Please select a start life between 0-500");
-            System.out.println("Wrong input");
             throw exception;
         }
         System.out.println(life);

@@ -10,6 +10,9 @@ class PurchaseTest {
     ArrayList<String> cellPhones = new ArrayList<String>( Arrays.asList("Motorola G99", "iPhone 99", "Samsung Galaxy 99", "Sony Xperia 99", "Huawei 99"));
     ArrayList<Integer> cellPhonePrices = new ArrayList<Integer>( Arrays.asList(800, 6000, 1000, 900, 900));
 
+
+
+
     @Test
     void checkInternetConnection() {
 
