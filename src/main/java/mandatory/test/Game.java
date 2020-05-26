@@ -13,8 +13,20 @@ public class Game {
     public int startLife;
     public int life;
     public String name;
-    HashMap<String, Integer> playerLife = new HashMap<String, Integer>();
-    HashMap<String, String> playerNames = new HashMap<String, String>();
+    public HashMap<String, Integer> playerLife = new HashMap<String, Integer>();
+    public HashMap<String, String> playerNames = new HashMap<String, String>();
+
+    public Game(HashMap<String, Integer> playerLife) {
+        this.playerLife = playerLife;
+    }
+
+    public void setPlayerLife(HashMap<String, Integer> playerLife) {
+        this.playerLife = playerLife;
+    }
+
+    public void setPlayerNames(HashMap<String, String> playerNames) {
+        this.playerNames = playerNames;
+    }
 
     public HashMap<String, String> getPlayerNames() {
         return playerNames;
@@ -93,11 +105,11 @@ public class Game {
     public String addName(String player, String name){
 
         //pattern to find if there is any special character in string
-        Pattern regex = Pattern.compile("[^a-zA-Z0-9]");
+        Pattern regex = Pattern.compile("[^a-zA-Z]");
         //matcher to find if there is any special character in string
         Matcher matcher = regex.matcher(name);
 
-        if(name.length() <= 16 && !matcher.find()) {
+        if(name.length() <= 16 && name.length() != 0 && !matcher.find()) {
             for(String key : getPlayerNames().keySet()) {
                 if (key.equals(player)) {
                     playerNames.put(key, name);
@@ -108,12 +120,20 @@ public class Game {
 
         } else if (name.length() > 16){
             IllegalArgumentException exception = new IllegalArgumentException("The name is too long - please choose a shorter one");
+            System.out.println("The name is too long - please choose a shorter one");
             throw exception;
-        } else if(matcher.find()){
-            IllegalArgumentException exception = new IllegalArgumentException("The name can't contain special characters - please choose another");
+        } else if (name.length() == 0){
+            IllegalArgumentException exception = new IllegalArgumentException("Name should consist of at least 1 character");
+            System.out.println("Name should consist of at least 1 character");
+            throw exception;
+        } else {
+            IllegalArgumentException exception = new IllegalArgumentException("The name can't contain numbers and special characters - please choose another");
+            System.out.println("The name can't contain numbers and special characters - please choose another");
             throw exception;
         }
-        System.out.println(playerNames);
+
+        System.out.println("added name: " + name + ", to " + player);
+//        System.out.println(playerNames);
         return name;
     }
 
@@ -122,6 +142,11 @@ public class Game {
     public int addLife(String player) {
 
         for(String key : getPlayerLife().keySet()) {
+            if(playerLife.get(key) + 1 == 501){
+                IllegalArgumentException exception = new IllegalArgumentException("Life can't go above 500!");
+                System.out.println("Life can't go above 500!");
+                throw exception;
+            }
             if (key.equals(player)) {
                 playerLife.put(key, playerLife.get(key) + 1);
                 System.out.println("added life to " + player);
@@ -136,12 +161,17 @@ public class Game {
     public int removeLife(String player) {
 
         for(String key : getPlayerLife().keySet()) {
+            if(playerLife.get(key) - 1 == -1){
+                IllegalArgumentException exception = new IllegalArgumentException("Life can't go below 0!");
+                System.out.println("Life can't go below 0!");
+                throw exception;
+            }
             if (key.equals(player)) {
                 playerLife.put(key, playerLife.get(key) -1);
                 System.out.println("removed life from " + player);
                 setLife(playerLife.get(key));
-            }
 
+            }
         }
 
         System.out.println(playerLife);
