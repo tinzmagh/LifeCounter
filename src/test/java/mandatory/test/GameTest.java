@@ -11,15 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
 
-    // DONE
-
-//    1. The test to check valid amount of players input
-//    2. The test to check valid life amount input
-//    3. The test to check valid player names input
-//    4. The test to check max life count
-//    5. The test to check min life count and
-//    6. The test to check reset life count and making sure that only life count is reset.
-
     // MISSING
 //    ? - Test to check that the game board is over when life count is 0
 //    ? - The test to check start new game
