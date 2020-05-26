@@ -21,7 +21,6 @@ class GameTest {
 //    6. The test to check reset life count and making sure that only life count is reset.
 
     // MISSING
-
 //    ? - Test to check that the game board is over when life count is 0
 //    ? - The test to check start new game
 //    ? - The test to check life count adjustment
