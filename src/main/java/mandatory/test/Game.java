@@ -142,7 +142,7 @@ public class Game {
     public int addLife(String player) {
 
         for(String key : getPlayerLife().keySet()) {
-            if(playerLife.get(key) + 1 == 501){
+            if(playerLife.get(key) + 1 > 500){
                 IllegalArgumentException exception = new IllegalArgumentException("Life can't go above 500!");
                 System.out.println("Life can't go above 500!");
                 throw exception;
@@ -161,7 +161,7 @@ public class Game {
     public int removeLife(String player) {
 
         for(String key : getPlayerLife().keySet()) {
-            if(playerLife.get(key) - 1 == -1){
+            if(playerLife.get(key) - 1 < 0){
                 IllegalArgumentException exception = new IllegalArgumentException("Life can't go below 0!");
                 System.out.println("Life can't go below 0!");
                 throw exception;

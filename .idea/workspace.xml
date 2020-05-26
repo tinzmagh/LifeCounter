@@ -56,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="188" column="45" lean-forward="true" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
+            <state relative-caret-position="194">
+              <caret line="144" column="40" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
@@ -70,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="168" selection-end-column="8" />
+            <state relative-caret-position="618">
+              <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1233#1242#0" expanded="true" />
@@ -271,7 +271,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590479996215" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590482558236" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -305,7 +305,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.resetLife">
+  <component name="RunManager" selected="JUnit.GameTest.addLife">
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameTest.addLife" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
@@ -333,22 +348,6 @@
       <option name="PACKAGE_NAME" value="mandatory.test" />
       <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
       <option name="METHOD_NAME" value="addName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.addStartLife" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
-      <option name="METHOD_NAME" value="addStartLife" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -395,11 +394,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameTest.resetLife" />
         <item itemvalue="JUnit.GameTest.addLife" />
         <item itemvalue="JUnit.GameTest.removeLife" />
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.resetLife" />
         <item itemvalue="JUnit.GameTest.addName" />
-        <item itemvalue="JUnit.GameTest.addStartLife" />
       </list>
     </recent_temporary>
   </component>
@@ -423,32 +422,11 @@
       <workItem from="1590246982361" duration="16156000" />
       <workItem from="1590307915162" duration="28374000" />
       <workItem from="1590346329664" duration="19733000" />
-      <workItem from="1590412299268" duration="17205000" />
+      <workItem from="1590412299268" duration="18535000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_addLife - 2020.05.25 at 21h 56m 15s.xml">
-      <configuration name="GameTest.addLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_addLife - 2020.05.25 at 21h 57m 24s.xml">
-      <configuration name="GameTest.addLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_addLife - 2020.05.25 at 21h 59m 38s.xml">
-      <configuration name="GameTest.addLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 44m 11s.xml">
-      <configuration name="GameTest.resetLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 49m 18s.xml">
-      <configuration name="GameTest.resetLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 50m 08s.xml">
-      <configuration name="GameTest.resetLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 53m 59s.xml">
-      <configuration name="GameTest.resetLife" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 55m 33s.xml">
       <configuration name="GameTest.resetLife" configurationId="JUnit" />
     </history-entry>
@@ -458,9 +436,30 @@
     <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 57m 52s.xml">
       <configuration name="GameTest.resetLife" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest_resetLife - 2020.05.26 at 09h 59m 19s.xml">
+      <configuration name="GameTest.resetLife" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_resetLife - 2020.05.26 at 10h 00m 00s.xml">
+      <configuration name="GameTest.resetLife" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_resetLife - 2020.05.26 at 10h 00m 22s.xml">
+      <configuration name="GameTest.resetLife" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest - 2020.05.26 at 10h 32m 00s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_removeLife - 2020.05.26 at 10h 33m 02s.xml">
+      <configuration name="GameTest.removeLife" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_removeLife - 2020.05.26 at 10h 34m 00s.xml">
+      <configuration name="GameTest.removeLife" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_addLife - 2020.05.26 at 10h 34m 33s.xml">
+      <configuration name="GameTest.addLife" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87837000" />
+    <option name="totallyTimeSpent" value="89167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -662,8 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="188" column="45" lean-forward="true" selection-start-line="188" selection-start-column="45" selection-end-line="188" selection-end-column="45" />
+        <state relative-caret-position="194">
+          <caret line="144" column="40" selection-start-line="144" selection-start-column="40" selection-end-line="144" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#455#456#0" expanded="true" />
@@ -674,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="168" selection-end-column="8" />
+        <state relative-caret-position="618">
+          <caret line="161" column="11" selection-start-line="161" selection-start-column="11" selection-end-line="161" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1233#1242#0" expanded="true" />
