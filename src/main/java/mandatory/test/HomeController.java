@@ -20,11 +20,6 @@ public class HomeController {
         return "game";
     }
 
-    @GetMapping("/game1")
-    public String game1(){
-        return "game1";
-    }
-
     @PostMapping("/remove-Life")
     public @ResponseBody int removeLife(String player){
         return game.removeLife(player);

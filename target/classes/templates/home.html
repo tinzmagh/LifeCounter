@@ -48,7 +48,7 @@
     <br>
     <br>
     <div class="center">
-        <button onclick="saveLife(); location.href='/game'" type="button" class="button">START</button>
+        <button type="button" id="startButton" class="button">START</button>
     </div>
 </div>
 
@@ -56,6 +56,28 @@
 
 </body>
 <script>
+
+    // onclick="saveLife(); location.href='/game'"
+
+    $( document ).ready(function() {
+
+        $("#startButton").click(function() {
+
+            if ($("#lifePoint").val() > 100) {
+                alert("The maximum amount of start life is 100.\n Please choose a smaller number.");
+            }
+
+            if ($("#lifePoint").val() < 1) {
+                alert("The minimum amount of start life is 1.\n Please choose a larger number.");
+            }
+
+            if($("#lifePoint").val() < 101 && $("#lifePoint").val() > 0) {
+                saveLife();
+
+            }
+
+        })
+    });
 
 
     function saveLife(){
@@ -75,9 +97,15 @@
             }
         });
 
-        var players = savePlayer();
-        setTimeout(players, 500);
+        $(this).delay(400).queue(function() {
 
+            savePlayer();
+
+            window.location = "/game";
+
+            $(this).dequeue();
+
+        });
 
     }
 

@@ -28,10 +28,6 @@ class GameTest {
 //    ? - The test to check start ‘dice’ rolled and making sure the random number is between 1 and amount of players
 
 
-    @Rule
-    public ExpectedException exception = ExpectedException.none();
-
-
     @Test
     void addPlayers() {
 
