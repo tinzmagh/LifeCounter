@@ -238,7 +238,7 @@
     }
 
 
-    // Er igang med at skulle kunne ændre navn. Skal have fat i et ID, men kan kun få fat i knappens ID og ikke p-tagets ID?? YOU GOU GIRL <3
+
     function changeName(id){
         if(id == 'editBtn1'){
             document.getElementById('playerName1').style.display = 'none';
@@ -278,59 +278,112 @@
         }
     }
 
+
     function setName(id, name){
+
+        var re = /^[A-Za-z0-9]+$/;
+
         if(id == 'okBtn1'){
             var input = $('input#playerInput1').val();
-            $('p#playerName1').text(input);
-            document.getElementById('playerInput1').style.display = 'none';
-            document.getElementById('playerName1').style.display = 'block';
-            document.getElementById('editBtn1').style.display = 'block';
-            document.getElementById('okBtn1').style.display = 'none';
+
+            if(re.test(input) && input != ""){
+
+                $('p#playerName1').text(input);
+                document.getElementById('playerInput1').style.display = 'none';
+                document.getElementById('playerName1').style.display = 'block';
+                document.getElementById('editBtn1').style.display = 'block';
+                document.getElementById('okBtn1').style.display = 'none';
+            }
+            else{
+                alert("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name.");
+                throw "Player should be at least 1 character, and can't contain special characters";
+            }
         }
+
 
         if(id == 'okBtn2'){
             var input = $('input#playerInput2').val();
-            $('p#playerName2').text(input);
-            document.getElementById('playerInput2').style.display = 'none';
-            document.getElementById('playerName2').style.display = 'block';
-            document.getElementById('editBtn2').style.display = 'block';
-            document.getElementById('okBtn2').style.display = 'none';
+
+            if(re.test(input) && input != ""){
+
+                $('p#playerName2').text(input);
+                document.getElementById('playerInput2').style.display = 'none';
+                document.getElementById('playerName2').style.display = 'block';
+                document.getElementById('editBtn2').style.display = 'block';
+                document.getElementById('okBtn2').style.display = 'none';
+            }
+            else{
+                alert("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name.");
+                throw "Player should be at least 1 character, and can't contain special characters";
+            }
         }
 
         if(id == 'okBtn3'){
             var input = $('input#playerInput3').val();
-            $('p#playerName3').text(input);
-            document.getElementById('playerInput3').style.display = 'none';
-            document.getElementById('playerName3').style.display = 'block';
-            document.getElementById('editBtn3').style.display = 'block';
-            document.getElementById('okBtn3').style.display = 'none';
+
+            if(re.test(input) && input != ""){
+                $('p#playerName3').text(input);
+                document.getElementById('playerInput3').style.display = 'none';
+                document.getElementById('playerName3').style.display = 'block';
+                document.getElementById('editBtn3').style.display = 'block';
+                document.getElementById('okBtn3').style.display = 'none';
+            }
+            else{
+                alert("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name.");
+                throw "Player should be at least 1 character, and can't contain special characters";
+            }
+
         }
 
         if(id == 'okBtn4'){
             var input = $('input#playerInput4').val();
-            $('p#playerName4').text(input);
-            document.getElementById('playerInput4').style.display = 'none';
-            document.getElementById('playerName4').style.display = 'block';
-            document.getElementById('editBtn4').style.display = 'block';
-            document.getElementById('okBtn4').style.display = 'none';
+
+            if(re.test(input) && input != ""){
+                $('p#playerName4').text(input);
+                document.getElementById('playerInput4').style.display = 'none';
+                document.getElementById('playerName4').style.display = 'block';
+                document.getElementById('editBtn4').style.display = 'block';
+                document.getElementById('okBtn4').style.display = 'none';
+
+            }
+            else{
+                alert("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name.");
+                throw "Player should be at least 1 character, and can't contain special characters";
+            }
         }
 
         if(id == 'okBtn5'){
             var input = $('input#playerInput5').val();
-            $('p#playerName5').text(input);
-            document.getElementById('playerInput5').style.display = 'none';
-            document.getElementById('playerName5').style.display = 'block';
-            document.getElementById('editBtn5').style.display = 'block';
-            document.getElementById('okBtn5').style.display = 'none';
+
+            if(re.test(input) && input != ""){
+
+                $('p#playerName5').text(input);
+                document.getElementById('playerInput5').style.display = 'none';
+                document.getElementById('playerName5').style.display = 'block';
+                document.getElementById('editBtn5').style.display = 'block';
+                document.getElementById('okBtn5').style.display = 'none';
+            }
+            else{
+                alert("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name.");
+                throw "Player should be at least 1 character, and can't contain special characters";
+            }
+
         }
 
         if(id == 'okBtn6'){
             var input = $('input#playerInput6').val();
-            $('p#playerName6').text(input);
-            document.getElementById('playerInput6').style.display = 'none';
-            document.getElementById('playerName6').style.display = 'block';
-            document.getElementById('editBtn6').style.display = 'block';
-            document.getElementById('okBtn6').style.display = 'none';
+
+            if(re.test(input) && input != ""){
+                $('p#playerName6').text(input);
+                document.getElementById('playerInput6').style.display = 'none';
+                document.getElementById('playerName6').style.display = 'block';
+                document.getElementById('editBtn6').style.display = 'block';
+                document.getElementById('okBtn6').style.display = 'none';
+            }
+            else{
+                alert("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name.");
+                throw "Player should be at least 1 character, and can't contain special characters";
+            }
         }
 
         $.ajax({

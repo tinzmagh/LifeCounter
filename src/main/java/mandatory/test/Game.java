@@ -74,7 +74,7 @@ public class Game {
                 playerNames.put("Player " + (i + 1), "Player " + (i + 1));
             }
         }
-        else{
+        else {
             IllegalArgumentException exception = new IllegalArgumentException("Maximum amount of players is 6");
             System.out.println("Maximum amount of players is 6");
             throw exception;

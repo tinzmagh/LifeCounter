@@ -64,12 +64,14 @@
         $("#startButton").click(function() {
 
             if ($("#lifePoint").val() > 100) {
-                // alert("The maximum amount of start life is 100.\n Please choose a smaller number.");
-                window.location = "/game"
+                alert("The maximum amount of start life is 100.\n Please choose a smaller number.");
+                // window.location = "/game"
+                throw "life cannnot be over 100"
             }
 
             if ($("#lifePoint").val() < 1) {
                 alert("The minimum amount of start life is 1.\n Please choose a larger number.");
+                throw "life cannnot be under 1"
             }
 
             if($("#lifePoint").val() < 101 && $("#lifePoint").val() > 0) {
@@ -88,6 +90,7 @@
         var lifeInt = parseInt(document.getElementById("lifePoint").value);
 
         if($("#lifePoint").val() < 101 && $("#lifePoint").val() > 0) {
+
 
             $.ajax({
                 type: 'POST',
@@ -112,7 +115,8 @@
 
         }
         else{
-            console.log("fejl");
+            throw "life cannnot be over 100"
+
         }
 
 

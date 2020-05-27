@@ -38,8 +38,10 @@ public class Case1Test {
   public void tearDown() {
     driver.quit();
   }
+
+
   @Test
-  public void case1() {
+  public void case1() throws InterruptedException {
 
     for (int i = 0; i < dataProvider.amountOfPlayers.size(); i++) {
 
@@ -62,13 +64,40 @@ public class Case1Test {
       driver.findElement(By.id("lifePoint")).sendKeys("50");
       // 7 | click | id=startButton |
       driver.findElement(By.id("startButton")).click();
+      Thread.sleep(2000);
 
     }
 
   }
 
   @Test
-  public void case2() {
+  public void case2() throws InterruptedException {
+
+    for (int i = 0; i < dataProvider.startingLife.size(); i++) {
+      // Test name: case6
+      // Step # | name | target | value
+      // 1 | open | / |
+      driver.get("http://localhost:9000/");
+      // 2 | setWindowSize | 1440x877 |
+      driver.manage().window().setSize(new Dimension(1440, 877));
+      // 3 | click | id=lifePoint |
+      driver.findElement(By.id("lifePoint")).click();
+      // 4 | type | id=lifePoint | 10
+      driver.findElement(By.id("lifePoint")).sendKeys(dataProvider.startingLife.get(i).toString());
+      // 5 | click | id=startButton |
+      driver.findElement(By.id("startButton")).click();
+      // 6 | click | id=plusPlayer1 |
+      Thread.sleep(2000);
+      driver.findElement(By.id("plusPlayer1")).click();
+      // 7 | click | css=.column2:nth-child(1) .button |
+      driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+      Thread.sleep(2000);
+
+    }
+  }
+
+  @Test
+  public void case4() throws InterruptedException {
 
     for (int i = 0; i < dataProvider.startingLife.size(); i++) {
 
@@ -91,6 +120,7 @@ public class Case1Test {
       driver.findElement(By.id("lifePoint")).sendKeys(dataProvider.startingLife.get(i).toString());
       // 7 | click | id=startButton |
       driver.findElement(By.id("startButton")).click();
+      Thread.sleep(2000);
 
     }
 
