@@ -41,7 +41,7 @@
     <br>
     <br>
     <label for="lifePoint">START LIFE</label><br>
-    <input style="text-align: center; padding-left: 0px;" type="text" id="lifePoint" placeholder="1-100">
+    <input style="text-align: center; padding-left: 0px;" type="number" id="lifePoint" placeholder="1-100">
     <br>
     <br>
     <br>
@@ -64,7 +64,8 @@
         $("#startButton").click(function() {
 
             if ($("#lifePoint").val() > 100) {
-                alert("The maximum amount of start life is 100.\n Please choose a smaller number.");
+                // alert("The maximum amount of start life is 100.\n Please choose a smaller number.");
+                window.location = "/game"
             }
 
             if ($("#lifePoint").val() < 1) {
@@ -86,26 +87,36 @@
         localStorage.setItem("lifeOutput", lifeInput);
         var lifeInt = parseInt(document.getElementById("lifePoint").value);
 
+        if($("#lifePoint").val() < 101 && $("#lifePoint").val() > 0) {
 
-        $.ajax({
-            type: 'POST',
-            url: '/add-StartLife',
-            data: {'life': lifeInt},
-            dataType: 'json',
-            success: function (data) {
-                console.log("Start Life saved " + data);
-            }
-        });
+            $.ajax({
+                type: 'POST',
+                url: '/add-StartLife',
+                data: {'life': lifeInt},
+                dataType: 'json',
+                success: function (data) {
+                    console.log("Start Life saved " + data);
+                }
+            });
 
-        $(this).delay(400).queue(function() {
+            $(this).delay(400).queue(function() {
 
-            savePlayer();
+                savePlayer();
 
-            window.location = "/game";
+                window.location = "/game";
 
-            $(this).dequeue();
+                $(this).dequeue();
 
-        });
+            });
+
+
+        }
+        else{
+            console.log("fejl");
+        }
+
+
+
 
     }
 
