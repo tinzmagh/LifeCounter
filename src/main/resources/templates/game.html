@@ -94,16 +94,26 @@
                 newValue = newValue - 1;
                 $('h1#lifeAmount1').text(newValue);
             }
-            // if(newValue == 0){
-            //     console.log('loser');
-            //     alert($('p#playerName1').text() +  " has lost!");
-            // }
+            if(newValue == 0){
+                $(this).delay(200).queue(function() {
+                    newValue = newValue - 1;
+                    alert($('p#playerName1').text() +  " has lost!")
+                    $(this).dequeue();
+                });
+            }
         }
         if (id == "minusPlayer2") {
             var newValue = parseInt($('h1#lifeAmount2').text());
             if (newValue != 0) {
                 newValue = newValue - 1;
                 $('h1#lifeAmount2').text(newValue);
+            }
+            if(newValue == 0){
+                $(this).delay(200).queue(function() {
+                    newValue = newValue - 1;
+                    alert($('p#playerName2').text() +  " has lost!")
+                    $(this).dequeue();
+                });
             }
         }
         if (id == "minusPlayer3") {
@@ -112,12 +122,26 @@
                 newValue = newValue - 1;
                 $('h1#lifeAmount3').text(newValue);
             }
+            if(newValue == 0){
+                $(this).delay(200).queue(function() {
+                    newValue = newValue - 1;
+                    alert($('p#playerName3').text() +  " has lost!")
+                    $(this).dequeue();
+                });
+            }
         }
         if (id == "minusPlayer4") {
             var newValue = parseInt($('h1#lifeAmount4').text());
             if (newValue != 0) {
                 newValue = newValue - 1;
                 $('h1#lifeAmount4').text(newValue);
+            }
+            if(newValue == 0){
+                $(this).delay(200).queue(function() {
+                    newValue = newValue - 1;
+                    alert($('p#playerName4').text() +  " has lost!")
+                    $(this).dequeue();
+                });
             }
         }
         if (id == "minusPlayer5") {
@@ -126,12 +150,26 @@
                 newValue = newValue - 1;
                 $('h1#lifeAmount5').text(newValue);
             }
+            if(newValue == 0){
+                $(this).delay(200).queue(function() {
+                    newValue = newValue - 1;
+                    alert($('p#playerName5').text() +  " has lost!")
+                    $(this).dequeue();
+                });
+            }
         }
         if (id == "minusPlayer6") {
             var newValue = parseInt($('h1#lifeAmount6').text());
             if (newValue != 0) {
                 newValue = newValue - 1;
                 $('h1#lifeAmount6').text(newValue);
+            }
+            if(newValue == 0){
+                $(this).delay(200).queue(function() {
+                    newValue = newValue - 1;
+                    alert($('p#playerName6').text() +  " has lost!")
+                    $(this).dequeue();
+                });
             }
         }
         $.ajax({
@@ -151,44 +189,62 @@
         console.log(name);
         if (id == "plusPlayer1") {
             var newValue = parseInt($('h1#lifeAmount1').text());
-            if (newValue != 500) {
+            if (newValue != 500 && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount1').text(newValue);
+            }
+            if(newValue == 0){
+                alert("Player is out and can no longer play in this round")
             }
         }
         if (id == "plusPlayer2") {
             var newValue = parseInt($('h1#lifeAmount2').text());
-            if (newValue != 500) {
+            if (newValue != 500  && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount2').text(newValue);
+            }
+            if(newValue == 0){
+                alert("Player is out and can no longer play in this round")
             }
         }
         if (id == "plusPlayer3") {
             var newValue = parseInt($('h1#lifeAmount3').text());
-            if (newValue != 500) {
+            if (newValue != 500 && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount3').text(newValue);
+            }
+            if(newValue == 0){
+                alert("Player is out and can no longer play in this round")
             }
         }
         if (id == "plusPlayer4") {
             var newValue = parseInt($('h1#lifeAmount4').text());
-            if (newValue != 500) {
+            if (newValue != 500 && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount4').text(newValue);
+            }
+            if(newValue == 0){
+                alert("Player is out and can no longer play in this round")
             }
         }
         if (id == "plusPlayer5") {
             var newValue = parseInt($('h1#lifeAmount5').text());
-            if (newValue != 500) {
+            if (newValue != 500 && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount5').text(newValue);
+            }
+            if(newValue == 0){
+                alert("Player is out and can no longer play in this round")
             }
         }
         if (id == "plusPlayer6") {
             var newValue = parseInt($('h1#lifeAmount6').text());
-            if (newValue != 500) {
+            if (newValue != 500 && newValue != 0) {
                 newValue = newValue + 1;
                 $('h1#lifeAmount6').text(newValue);
+            }
+            if(newValue == 0){
+                alert("Player is out and can no longer play in this round")
             }
         }
 
@@ -281,7 +337,7 @@
 
     function setName(id, name){
 
-        var re = /^[A-Za-z0-9]+$/;
+        var re = /^[A-Za-z0-9 ]+$/;
 
         if(id == 'okBtn1'){
             var input = $('input#playerInput1').val();
