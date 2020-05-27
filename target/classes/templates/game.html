@@ -88,6 +88,7 @@
         console.log(id);
         console.log(name)
 
+
         if (id == "minusPlayer1") {
             var newValue = parseInt($('h1#lifeAmount1').text());
             if (newValue != 0) {
@@ -95,7 +96,7 @@
                 $('h1#lifeAmount1').text(newValue);
             }
             if(newValue == 0){
-                $(this).delay(400).queue(function() {
+                $(this).delay(200).queue(function() {
                     newValue = newValue - 1;
                     alert($('p#playerName1').text() +  " has lost!")
                     $(this).dequeue();
@@ -109,7 +110,7 @@
                 $('h1#lifeAmount2').text(newValue);
             }
             if(newValue == 0){
-                $(this).delay(400).queue(function() {
+                $(this).delay(200).queue(function() {
                     newValue = newValue - 1;
                     alert($('p#playerName2').text() +  " has lost!")
                     $(this).dequeue();
@@ -123,7 +124,7 @@
                 $('h1#lifeAmount3').text(newValue);
             }
             if(newValue == 0){
-                $(this).delay(400).queue(function() {
+                $(this).delay(200).queue(function() {
                     newValue = newValue - 1;
                     alert($('p#playerName3').text() +  " has lost!")
                     $(this).dequeue();
@@ -137,7 +138,7 @@
                 $('h1#lifeAmount4').text(newValue);
             }
             if(newValue == 0){
-                $(this).delay(400).queue(function() {
+                $(this).delay(200).queue(function() {
                     newValue = newValue - 1;
                     alert($('p#playerName4').text() +  " has lost!")
                     $(this).dequeue();
@@ -151,7 +152,7 @@
                 $('h1#lifeAmount5').text(newValue);
             }
             if(newValue == 0){
-                $(this).delay(400).queue(function() {
+                $(this).delay(200).queue(function() {
                     newValue = newValue - 1;
                     alert($('p#playerName5').text() +  " has lost!")
                     $(this).dequeue();
@@ -165,7 +166,7 @@
                 $('h1#lifeAmount6').text(newValue);
             }
             if(newValue == 0){
-                $(this).delay(400).queue(function() {
+                $(this).delay(200).queue(function() {
                     newValue = newValue - 1;
                     alert($('p#playerName6').text() +  " has lost!")
                     $(this).dequeue();

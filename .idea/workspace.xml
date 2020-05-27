@@ -13,23 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-164">
-              <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+            <state relative-caret-position="716">
+              <caret line="344" column="141" selection-start-line="344" selection-start-column="141" selection-end-line="344" selection-end-column="141" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="802">
-              <caret line="167" column="31" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
+            <state relative-caret-position="335">
+              <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="134" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -59,48 +47,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
+            <state relative-caret-position="527">
               <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
                 <element signature="e#499#500#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#152#161#0" expanded="true" />
-                <element signature="e#255#264#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="112" column="15" lean-forward="true" selection-start-line="104" selection-start-column="12" selection-end-line="112" selection-end-column="15" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -140,11 +93,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case2Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case4Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/java/mandatory/test/Game.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/game.html" />
+        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/LC4Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java" />
       </list>
     </option>
   </component>
@@ -161,6 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,8 +216,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,7 +226,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590581353941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590598036608" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -306,22 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TestApplication">
-    <configuration name="Case1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Case1Test.lC4">
     <configuration name="Case1Test.case1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
@@ -333,22 +272,6 @@
       <option name="PACKAGE_NAME" value="mandatory.test" />
       <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
       <option name="METHOD_NAME" value="case1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Case1Test.case2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
-      <option name="METHOD_NAME" value="case2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -370,16 +293,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Case1Test.case7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="mandatory.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.PurchaseTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="METHOD_NAME" value="case7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Case1Test.case8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="METHOD_NAME" value="case8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Case1Test.lC4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="METHOD_NAME" value="lC4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -393,11 +350,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Case1Test.lC4" />
         <item itemvalue="JUnit.Case1Test.case6" />
-        <item itemvalue="JUnit.Case1Test.case2" />
+        <item itemvalue="JUnit.Case1Test.case8" />
+        <item itemvalue="JUnit.Case1Test.case7" />
         <item itemvalue="JUnit.Case1Test.case1" />
-        <item itemvalue="JUnit.Case1Test" />
-        <item itemvalue="JUnit.PurchaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -422,50 +379,51 @@
       <workItem from="1590307915162" duration="28374000" />
       <workItem from="1590346329664" duration="19733000" />
       <workItem from="1590412299268" duration="26634000" />
-      <workItem from="1590567956078" duration="8994000" />
+      <workItem from="1590567956078" duration="17678000" />
+      <workItem from="1590592107812" duration="3311000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Case1Test_case2 - 2020.05.27 at 11h 19m 53s.xml">
-      <configuration name="Case1Test.case2" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 02m 42s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case2 - 2020.05.27 at 11h 20m 25s.xml">
-      <configuration name="Case1Test.case2" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 04m 05s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case2 - 2020.05.27 at 11h 21m 14s.xml">
-      <configuration name="Case1Test.case2" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 10m 47s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case2 - 2020.05.27 at 11h 23m 03s.xml">
-      <configuration name="Case1Test.case2" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 35m 46s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case2 - 2020.05.27 at 11h 27m 53s.xml">
-      <configuration name="Case1Test.case2" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 36m 41s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case2 - 2020.05.27 at 11h 28m 41s.xml">
-      <configuration name="Case1Test.case2" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 37m 17s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case6 - 2020.05.27 at 11h 34m 57s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 38m 02s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 39m 42s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Case1Test_case6 - 2020.05.27 at 18h 42m 19s.xml">
       <configuration name="Case1Test.case6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case6 - 2020.05.27 at 11h 35m 46s.xml">
-      <configuration name="Case1Test.case6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Case1Test_case6 - 2020.05.27 at 11h 37m 43s.xml">
-      <configuration name="Case1Test.case6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Case1Test_case6 - 2020.05.27 at 11h 38m 10s.xml">
-      <configuration name="Case1Test.case6" configurationId="JUnit" />
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 43m 15s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106260000" />
+    <option name="totallyTimeSpent" value="118255000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18454936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18669528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -475,7 +433,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2624204" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3057325" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -641,13 +599,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case2Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case2Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -658,54 +610,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case4Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case6Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="101" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="101" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#152#161#0" expanded="true" />
-            <element signature="e#255#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case4Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case6Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -716,10 +622,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC3Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="69" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="69" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC7Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="71" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="71" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC8Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="79" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="79" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC9Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="91" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="91" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC10Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="107" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="107" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC11Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="73" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="73" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#152#161#0" expanded="true" />
+            <element signature="e#255#264#0" expanded="true" />
+            <element signature="e#355#363#0" expanded="true" />
+            <element signature="e#469#477#0" expanded="true" />
+            <element signature="e#482#491#0" expanded="true" />
+            <element signature="e#579#588#0" expanded="true" />
+            <element signature="e#676#685#0" expanded="true" />
+            <element signature="e#772#781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="65" column="107" selection-start-line="65" selection-start-column="107" selection-end-line="65" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="167" column="31" selection-start-line="167" selection-start-column="31" selection-end-line="167" selection-end-column="31" />
+        <state relative-caret-position="335">
+          <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="134" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -729,6 +714,16 @@
             <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="344" column="141" selection-start-line="344" selection-start-column="141" selection-end-line="344" selection-end-column="141" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
