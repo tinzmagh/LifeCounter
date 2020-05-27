@@ -11,8 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
 
-
-
     // MISSING
 //    ? - Test to check that the game board is over when life count is 0
 //    ? - The test to check start new game
