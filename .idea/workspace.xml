@@ -16,8 +16,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7125">
-              <caret line="490" column="23" lean-forward="true" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
+            <state relative-caret-position="754">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+              <folding>
+                <element signature="e#9551#9697#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
+            <state relative-caret-position="527">
               <caret line="107" column="49" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,10 +56,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
+            <state relative-caret-position="236">
               <caret line="72" column="121" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="121" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2341#2349#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,12 +101,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case2Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case4Test.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/main/java/mandatory/test/Game.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/game.html" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/LC4Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/InvalidStartLifeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java" />
       </list>
     </option>
@@ -231,7 +236,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590670464225" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590679502003" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -265,7 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeleniumTest">
+  <component name="RunManager" selected="JUnit.SeleniumTest.invalidStartLife">
     <configuration name="SeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
@@ -281,7 +286,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumTest.case1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.case7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -291,23 +296,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
       <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
-      <option name="METHOD_NAME" value="case1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SeleniumTest.case6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
-      <option name="METHOD_NAME" value="case6" />
+      <option name="METHOD_NAME" value="case7" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -324,6 +313,22 @@
       <option name="PACKAGE_NAME" value="mandatory.test" />
       <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
       <option name="METHOD_NAME" value="case8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.invalidStartLife" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
+      <option name="METHOD_NAME" value="invalidStartLife" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -354,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeleniumTest" />
-        <item itemvalue="JUnit.SeleniumTest.case1" />
-        <item itemvalue="JUnit.SeleniumTest.lC4" />
-        <item itemvalue="JUnit.SeleniumTest.case6" />
+        <item itemvalue="JUnit.SeleniumTest.invalidStartLife" />
         <item itemvalue="JUnit.SeleniumTest.case8" />
+        <item itemvalue="JUnit.SeleniumTest.case7" />
+        <item itemvalue="JUnit.SeleniumTest.lC4" />
+        <item itemvalue="JUnit.SeleniumTest" />
       </list>
     </recent_temporary>
   </component>
@@ -385,44 +390,44 @@
       <workItem from="1590412299268" duration="26634000" />
       <workItem from="1590567956078" duration="17678000" />
       <workItem from="1590592107812" duration="6159000" />
-      <workItem from="1590656640549" duration="963000" />
+      <workItem from="1590656640549" duration="4799000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 46m 19s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_lC4 - 2020.05.28 at 16h 30m 15s.xml">
+      <configuration name="SeleniumTest.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 47m 35s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case7 - 2020.05.28 at 16h 43m 11s.xml">
+      <configuration name="SeleniumTest.case7" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 51m 02s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 53m 29s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 51m 32s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 53m 59s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 53m 18s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 54m 38s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 54m 30s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 55m 15s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case6 - 2020.05.27 at 18h 55m 49s.xml">
-      <configuration name="Case1Test.case6" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 56m 33s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 56m 32s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 57m 00s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 57m 13s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 57m 50s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_case1 - 2020.05.28 at 14h 47m 03s.xml">
-      <configuration name="Case1Test.case1" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_case8 - 2020.05.28 at 16h 58m 20s.xml">
+      <configuration name="SeleniumTest.case8" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122066000" />
+    <option name="totallyTimeSpent" value="125902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -438,7 +443,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21401274" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21401274" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -607,16 +612,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case2Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case4Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case6Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="112" column="15" lean-forward="true" selection-start-line="104" selection-start-column="12" selection-end-line="112" selection-end-column="15" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC3Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -671,28 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="107" column="49" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="72" column="121" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="121" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -717,10 +690,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="107" column="49" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="72" column="121" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2341#2349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/InvalidStartLifeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7125">
-          <caret line="490" column="23" lean-forward="true" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
+        <state relative-caret-position="754">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="e#9551#9697#1" />
+          </folding>
         </state>
       </provider>
     </entry>
