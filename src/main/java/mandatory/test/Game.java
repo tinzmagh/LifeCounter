@@ -10,6 +10,7 @@ public class Game {
     public int playerAmount;
 
 
+    public int diceRollNumber;
     public int startLife;
     public int life;
     public String name;
@@ -46,6 +47,10 @@ public class Game {
 
     public void setLife(int life) {
         this.life = life;
+    }
+
+    public void setDiceRollNumber(int diceRollNumber) {
+        this.diceRollNumber = diceRollNumber;
     }
 
     public void setName(String name) {
@@ -188,6 +193,15 @@ public class Game {
         System.out.println(playerLife);
         System.out.println("Life reset to start");
         return life;
+    }
+
+    public int rollDice(int diceNumber){
+
+        if (diceNumber >= 1 && diceNumber <= playerAmount){
+            setDiceRollNumber(diceNumber);
+            System.out.println("Dice is within range");
+        }
+        return diceRollNumber;
     }
 
 
