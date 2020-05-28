@@ -5,23 +5,20 @@ import org.junit.Before;
 import org.junit.After;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.core.IsNot.not;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.*;
 
-public class Case1Test {
+public class SeleniumTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
-  DataProvider dataProvider = new DataProvider();
+
 
 
 
@@ -45,7 +42,11 @@ public class Case1Test {
   @Test
   public void case1() throws InterruptedException {
 
-    for (int i = 0; i < dataProvider.validAmountOfPlayers.size(); i++) {
+
+    ArrayList<Integer> validAmountOfPlayers = new ArrayList<Integer>( Arrays.asList(2, 3, 4, 5, 6));
+
+
+    for (int i = 0; i < validAmountOfPlayers.size(); i++) {
 
       // Test name: case1
       // Step # | name | target | value
@@ -58,7 +59,7 @@ public class Case1Test {
       // 4 | select | id=players | label=3
       {
         WebElement dropdown = driver.findElement(By.id("players"));
-        dropdown.findElement(By.xpath("//option[. ='" + dataProvider.validAmountOfPlayers.get(i) + "']")).click();
+        dropdown.findElement(By.xpath("//option[. ='" + validAmountOfPlayers.get(i) + "']")).click();
       }
       // 5 | click | id=lifePoint |
       driver.findElement(By.id("lifePoint")).click();
@@ -75,7 +76,9 @@ public class Case1Test {
   @Test
   public void case2() throws InterruptedException {
 
-    for (int i = 0; i < dataProvider.validStartingLife.size(); i++) {
+    ArrayList<Integer> validStartingLife = new ArrayList<Integer>( Arrays.asList(1, 50));
+
+    for (int i = 0; i < validStartingLife.size(); i++) {
       // Test name: case6
       // Step # | name | target | value
       // 1 | open | / |
@@ -85,7 +88,7 @@ public class Case1Test {
       // 3 | click | id=lifePoint |
       driver.findElement(By.id("lifePoint")).click();
       // 4 | type | id=lifePoint | 10
-      driver.findElement(By.id("lifePoint")).sendKeys(dataProvider.validStartingLife.get(i).toString());
+      driver.findElement(By.id("lifePoint")).sendKeys(validStartingLife.get(i).toString());
       // 5 | click | id=startButton |
       driver.findElement(By.id("startButton")).click();
       // 6 | click | id=plusPlayer1 |
@@ -101,7 +104,9 @@ public class Case1Test {
   @Test
   public void case3() throws InterruptedException {
 
-    for (int i = 0; i < dataProvider.validNames.size(); i++) {
+    ArrayList<String> validNames = new ArrayList<String>( Arrays.asList("John Johnson", "Veronique92", "steffen", "P"));
+
+    for (int i = 0; i < validNames.size(); i++) {
 
       // Test name: LC_3
       // Step # | name | target | value
@@ -129,7 +134,7 @@ public class Case1Test {
       driver.findElement(By.cssSelector(".column:nth-child(1) > .center:nth-child(1)")).click();
       // 10 | type | id=playerInput1 | John Johnson
       driver.findElement(By.id("playerInput1")).clear();
-      driver.findElement(By.id("playerInput1")).sendKeys(dataProvider.validNames.get(i));
+      driver.findElement(By.id("playerInput1")).sendKeys(validNames.get(i));
       // 11 | click | css=#okBtn1 > .fa |
       driver.findElement(By.cssSelector("#okBtn1 > .fa")).click();
       // 12 | click | css=.column2:nth-child(1) .button |
@@ -137,13 +142,66 @@ public class Case1Test {
     }
   }
 
+  @Test
+  public void lC4() throws InterruptedException {
 
+    ArrayList<String> invalidNames = new ArrayList<String>( Arrays.asList("Ka!!?", "", "he**l"));
+
+    // Test name: LC_4
+    // Step # | name | target | value
+    // 1 | open | / |
+    driver.get("http://localhost:9000/");
+    // 2 | setWindowSize | 1440x877 |
+    driver.manage().window().setSize(new Dimension(1440, 877));
+    // 3 | select | id=players | label=3
+    {
+      WebElement dropdown = driver.findElement(By.id("players"));
+      dropdown.findElement(By.xpath("//option[. = '3']")).click();
+    }
+    // 4 | click | id=lifePoint |
+    driver.findElement(By.id("lifePoint")).click();
+    // 5 | type | id=lifePoint | 60
+    driver.findElement(By.id("lifePoint")).sendKeys("60");
+    // 6 | click | id=startButton |
+    driver.findElement(By.id("startButton")).click();
+    Thread.sleep(2000);
+    // 7 | click | css=#editBtn2 > .fa |
+    driver.findElement(By.cssSelector("#editBtn2 > .fa")).click();
+    // 8 | click | css=.column:nth-child(2) > .center:nth-child(1) |
+    driver.findElement(By.cssSelector(".column:nth-child(2) > .center:nth-child(1)")).click();
+    // 9 | type | id=playerInput2 | Ka!!?
+    driver.findElement(By.id("playerInput2")).clear();
+    driver.findElement(By.id("playerInput2")).sendKeys("Ke!!?");
+    Thread.sleep(2000);
+    // 10 | click | css=#okBtn2 > .fa |
+    // 11 | assertAlert | Player name should be at least 1 character, and can't contain special characters.Please choose another name. |
+    try {
+      driver.findElement(By.cssSelector("#okBtn2 > .fa")).click();
+      Thread.sleep(2000);
+      String alert = driver.switchTo().alert().getText();
+      System.out.println(alert);
+      assertThat(alert, is("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name."));
+      driver.switchTo().alert().accept();
+
+    } catch (UnhandledAlertException p) {
+      p.printStackTrace();
+    }
+    Thread.sleep(2000);
+    // 12 | click | css=.column:nth-child(2) |
+    driver.findElement(By.cssSelector(".column:nth-child(2)")).click();
+    // 13 | click | css=.column2:nth-child(1) .button |
+    driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+
+  }
 
 
   @Test
   public void case4() throws InterruptedException {
 
-    for (int i = 0; i < dataProvider.validRemoveLifeInputs.size(); i++) {
+    ArrayList<Integer> validRemoveLifeInputs = new ArrayList<Integer>( Arrays.asList(6, 50, 100));
+    ArrayList<Integer> validRemoveLifeOutputs = new ArrayList<Integer>( Arrays.asList(1, 45, 95));
+
+    for (int i = 0; i < validRemoveLifeInputs.size(); i++) {
 
 
       // Test name: LC_7
@@ -162,7 +220,7 @@ public class Case1Test {
       // 5 | click | id=lifePoint |
       driver.findElement(By.id("lifePoint")).click();
       // 6 | type | id=lifePoint | 60
-      driver.findElement(By.id("lifePoint")).sendKeys(dataProvider.validRemoveLifeInputs.get(i).toString());
+      driver.findElement(By.id("lifePoint")).sendKeys(validRemoveLifeInputs.get(i).toString());
       // 7 | click | id=startButton |
       driver.findElement(By.id("startButton")).click();
       Thread.sleep(2000);
@@ -177,7 +235,7 @@ public class Case1Test {
       // 12 | click | id=minusPlayer1 |
       driver.findElement(By.id("minusPlayer1")).click();
       // 13 | checks if life amount is correct |
-      String expectedLifeAmount = dataProvider.validRemoveLifeOutputs.get(i).toString();
+      String expectedLifeAmount = validRemoveLifeOutputs.get(i).toString();
       String lifeAmount2 = driver.findElement(By.id("lifeAmount1")).getText();
       Assert.assertTrue("Your error message", lifeAmount2.contains(expectedLifeAmount));
       Thread.sleep(1000);
@@ -189,7 +247,10 @@ public class Case1Test {
   @Test
   public void case5() throws InterruptedException {
 
-    for (int i = 0; i < dataProvider.validAddLifeInputs.size(); i++) {
+    ArrayList<Integer> validAddLifeInputs = new ArrayList<Integer>( Arrays.asList(1, 50, 95));
+    ArrayList<Integer> validAddLifeOutputs = new ArrayList<Integer>( Arrays.asList(6, 55, 100));
+
+    for (int i = 0; i < validAddLifeInputs.size(); i++) {
 
       // Test name: LC_8
       // Step # | name | target | value
@@ -209,7 +270,7 @@ public class Case1Test {
       // 6 | click | id=lifePoint |
       driver.findElement(By.id("lifePoint")).click();
       // 7 | type | id=lifePoint | 60
-      driver.findElement(By.id("lifePoint")).sendKeys(dataProvider.validAddLifeInputs.get(i).toString());
+      driver.findElement(By.id("lifePoint")).sendKeys(validAddLifeInputs.get(i).toString());
       // 8 | click | id=startButton |
       driver.findElement(By.id("startButton")).click();
       Thread.sleep(1000);
@@ -224,7 +285,7 @@ public class Case1Test {
       // 13 | click | id=plusPlayer2 |
       driver.findElement(By.id("plusPlayer2")).click();
       // 14 | checks if life amount is correct |
-      String expectedLifeAmount = dataProvider.validAddLifeOutputs.get(i).toString();
+      String expectedLifeAmount = validAddLifeOutputs.get(i).toString();
       String lifeAmount2 = driver.findElement(By.id("lifeAmount2")).getText();
       Assert.assertTrue("Your error message", lifeAmount2.contains(expectedLifeAmount));
       Thread.sleep(1000);
@@ -305,59 +366,8 @@ public class Case1Test {
     driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
   }
 
-  @Test
-  public void lC4() throws InterruptedException {
 
-    // Test name: LC_4
-    // Step # | name | target | value
-    // 1 | open | / |
-    driver.get("http://localhost:9000/");
-    // 2 | setWindowSize | 1440x877 |
-    driver.manage().window().setSize(new Dimension(1440, 877));
-    // 3 | select | id=players | label=3
-    {
-      WebElement dropdown = driver.findElement(By.id("players"));
-      dropdown.findElement(By.xpath("//option[. = '3']")).click();
-    }
-    // 4 | click | id=lifePoint |
-    driver.findElement(By.id("lifePoint")).click();
-    // 5 | type | id=lifePoint | 60
-    driver.findElement(By.id("lifePoint")).sendKeys("60");
-    // 6 | click | id=startButton |
-    driver.findElement(By.id("startButton")).click();
-    Thread.sleep(2000);
-    // 7 | click | css=#editBtn2 > .fa |
-    driver.findElement(By.cssSelector("#editBtn2 > .fa")).click();
-    // 8 | click | css=.column:nth-child(2) > .center:nth-child(1) |
-    driver.findElement(By.cssSelector(".column:nth-child(2) > .center:nth-child(1)")).click();
-    // 9 | type | id=playerInput2 | Ka!!?
-    driver.findElement(By.id("playerInput2")).clear();
-    driver.findElement(By.id("playerInput2")).sendKeys("Ke!!?");
-    Thread.sleep(2000);
-    // 10 | click | css=#okBtn2 > .fa |
-    // 11 | assertAlert | Player name should be at least 1 character, and can't contain special characters.Please choose another name. |
-    try {
-      driver.findElement(By.cssSelector("#okBtn2 > .fa")).click();
-      System.out.println("First");
-    } catch (UnhandledAlertException p) {
-      try {
-        System.out.println("Second try");
-        String alert = driver.switchTo().alert().getText();
-        System.out.println(alert);
-        assertThat(alert, is("Player name should be at least 1 character, and can't contain special characters.\n Please choose another name."));
-        driver.switchTo().alert().accept();
-      } catch (NoAlertPresentException e) {
-        e.printStackTrace();
-      }
 
-    }
-    Thread.sleep(2000);
-    // 12 | click | css=.column:nth-child(2) |
-    driver.findElement(By.cssSelector(".column:nth-child(2)")).click();
-    // 13 | click | css=.column2:nth-child(1) .button |
-    driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
-
-  }
 
   @Test
   public void case7() throws InterruptedException {
@@ -473,6 +483,45 @@ public class Case1Test {
   }
 
 
+   // Roll dice???????
+//  @Test
+//  public void dice() throws InterruptedException {
+//    // Test name: dice
+//    // Step # | name | target | value
+//    // 1 | open | / |
+//    driver.get("http://localhost:9000/");
+//    // 2 | setWindowSize | 1440x877 |
+//    driver.manage().window().setSize(new Dimension(1440, 877));
+//    // 3 | click | id=players |
+//    driver.findElement(By.id("players")).click();
+//    // 4 | select | id=players | label=3
+//    {
+//      WebElement dropdown = driver.findElement(By.id("players"));
+//      dropdown.findElement(By.xpath("//option[. = '3']")).click();
+//    }
+//    // 5 | click | id=lifePoint |
+//    driver.findElement(By.id("lifePoint")).click();
+//    // 6 | type | id=lifePoint | 40
+//    driver.findElement(By.id("lifePoint")).sendKeys("40");
+//    // 7 | click | id=startButton |
+//    driver.findElement(By.id("startButton")).click();
+//    Thread.sleep(2000);
+//    // 8 | click | css=.center:nth-child(5) > .button |
+//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+//    // 9 | click | css=.center:nth-child(5) > .button |
+//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+//    // 10 | click | css=.center:nth-child(5) > .button |
+//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+//    // 11 | click | css=.center:nth-child(5) > .button |
+//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+//    // 12 | click | css=.center:nth-child(5) > .button |
+//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+//    // 13 | click | css=.center:nth-child(5) > .button |
+//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+//    // 14 | click | css=.column2:nth-child(1) .button |
+//    driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+//  }
+
 
 
 
@@ -480,64 +529,66 @@ public class Case1Test {
 
   // DET HER ER IKKE NØDVENDIGVIS NOGET DER SKAL MED !!!!
 
-  @Test
-  public void cases4() throws InterruptedException {
-
-    for (int i = 0; i < dataProvider.validStartingLife.size(); i++) {
-
-      // Test name: case1
-      // Step # | name | target | value
-      // 1 | open | / |
-      driver.get("http://localhost:9000/");
-      // 2 | setWindowSize | 1440x877 |
-      driver.manage().window().setSize(new Dimension(1440, 877));
-      // 3 | click | id=players |
-      driver.findElement(By.id("players")).click();
-      // 4 | select | id=players | label=3
-      {
-        WebElement dropdown = driver.findElement(By.id("players"));
-        dropdown.findElement(By.xpath("//option[. ='3']")).click();
-      }
-      // 5 | click | id=lifePoint |
-      driver.findElement(By.id("lifePoint")).click();
-      // 6 | type | id=lifePoint | 50
-      driver.findElement(By.id("lifePoint")).sendKeys(dataProvider.validStartingLife.get(i).toString());
-      // 7 | click | id=startButton |
-      driver.findElement(By.id("startButton")).click();
-      Thread.sleep(2000);
-
-    }
-
-  }
-
-
-  @Test
-  public void cases3() throws InterruptedException {
-    // Test name: case2
-    // Step # | name | target | value
-    // 1 | open | / |
-    driver.get("http://localhost:9000/");
-    // 2 | setWindowSize | 1440x877 |
-    driver.manage().window().setSize(new Dimension(1440, 877));
-    // 3 | click | id=players |
-    driver.findElement(By.id("players")).click();
-    // 4 | select | id=players | label=3
-    {
-      WebElement dropdown = driver.findElement(By.id("players"));
-      dropdown.findElement(By.xpath("//option[. = '3']")).click();
-    }
-    // 5 | click | id=lifePoint |
-    driver.findElement(By.id("lifePoint")).click();
-    // 6 | type | id=lifePoint | 30
-    driver.findElement(By.id("lifePoint")).sendKeys("30");
-    // 7 | click | id=startButton |
-    driver.findElement(By.id("startButton")).click();
-    Thread.sleep(2000);
-    // 8 | click | id=plusPlayer1 |
-    driver.findElement(By.id("plusPlayer1")).click();
-    // 9 | click | id=plusPlayer1 |
-    driver.findElement(By.id("plusPlayer1")).click();
-    // 10 | click | id=plusPlayer1 |
-    driver.findElement(By.id("plusPlayer1")).click();
-  }
+//  @Test
+//  public void cases4() throws InterruptedException {
+//
+//    ArrayList<Integer> validStartingLife = new ArrayList<Integer>( Arrays.asList(1, 50));
+//
+//    for (int i = 0; i < validStartingLife.size(); i++) {
+//
+//      // Test name: case1
+//      // Step # | name | target | value
+//      // 1 | open | / |
+//      driver.get("http://localhost:9000/");
+//      // 2 | setWindowSize | 1440x877 |
+//      driver.manage().window().setSize(new Dimension(1440, 877));
+//      // 3 | click | id=players |
+//      driver.findElement(By.id("players")).click();
+//      // 4 | select | id=players | label=3
+//      {
+//        WebElement dropdown = driver.findElement(By.id("players"));
+//        dropdown.findElement(By.xpath("//option[. ='3']")).click();
+//      }
+//      // 5 | click | id=lifePoint |
+//      driver.findElement(By.id("lifePoint")).click();
+//      // 6 | type | id=lifePoint | 50
+//      driver.findElement(By.id("lifePoint")).sendKeys(validStartingLife.get(i).toString());
+//      // 7 | click | id=startButton |
+//      driver.findElement(By.id("startButton")).click();
+//      Thread.sleep(2000);
+//
+//    }
+//
+//  }
+//
+//
+//  @Test
+//  public void cases3() throws InterruptedException {
+//    // Test name: case2
+//    // Step # | name | target | value
+//    // 1 | open | / |
+//    driver.get("http://localhost:9000/");
+//    // 2 | setWindowSize | 1440x877 |
+//    driver.manage().window().setSize(new Dimension(1440, 877));
+//    // 3 | click | id=players |
+//    driver.findElement(By.id("players")).click();
+//    // 4 | select | id=players | label=3
+//    {
+//      WebElement dropdown = driver.findElement(By.id("players"));
+//      dropdown.findElement(By.xpath("//option[. = '3']")).click();
+//    }
+//    // 5 | click | id=lifePoint |
+//    driver.findElement(By.id("lifePoint")).click();
+//    // 6 | type | id=lifePoint | 30
+//    driver.findElement(By.id("lifePoint")).sendKeys("30");
+//    // 7 | click | id=startButton |
+//    driver.findElement(By.id("startButton")).click();
+//    Thread.sleep(2000);
+//    // 8 | click | id=plusPlayer1 |
+//    driver.findElement(By.id("plusPlayer1")).click();
+//    // 9 | click | id=plusPlayer1 |
+//    driver.findElement(By.id("plusPlayer1")).click();
+//    // 10 | click | id=plusPlayer1 |
+//    driver.findElement(By.id("plusPlayer1")).click();
+//  }
 }

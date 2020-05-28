@@ -14,13 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="344" column="141" selection-start-line="344" selection-start-column="141" selection-end-line="344" selection-end-column="141" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="7125">
+              <caret line="490" column="23" lean-forward="true" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -28,17 +25,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="134" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,12 +39,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+            <state relative-caret-position="1245">
+              <caret line="107" column="49" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
                 <element signature="e#499#500#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="72" column="121" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="121" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +103,7 @@
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/LC4Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java" />
       </list>
     </option>
   </component>
@@ -115,8 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,6 +219,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,7 +231,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590598036608" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590670464225" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -260,8 +265,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Case1Test.lC4">
-    <configuration name="Case1Test.case1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SeleniumTest">
+    <configuration name="SeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -270,14 +275,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.case1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
       <option name="METHOD_NAME" value="case1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Case1Test.case6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.case6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -286,14 +306,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
       <option name="METHOD_NAME" value="case6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Case1Test.case7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.case8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -302,30 +322,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
-      <option name="METHOD_NAME" value="case7" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Case1Test.case8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
       <option name="METHOD_NAME" value="case8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Case1Test.lC4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.lC4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -334,7 +338,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.Case1Test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
       <option name="METHOD_NAME" value="lC4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -350,11 +354,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Case1Test.lC4" />
-        <item itemvalue="JUnit.Case1Test.case6" />
-        <item itemvalue="JUnit.Case1Test.case8" />
-        <item itemvalue="JUnit.Case1Test.case7" />
-        <item itemvalue="JUnit.Case1Test.case1" />
+        <item itemvalue="JUnit.SeleniumTest" />
+        <item itemvalue="JUnit.SeleniumTest.case1" />
+        <item itemvalue="JUnit.SeleniumTest.lC4" />
+        <item itemvalue="JUnit.SeleniumTest.case6" />
+        <item itemvalue="JUnit.SeleniumTest.case8" />
       </list>
     </recent_temporary>
   </component>
@@ -380,50 +384,51 @@
       <workItem from="1590346329664" duration="19733000" />
       <workItem from="1590412299268" duration="26634000" />
       <workItem from="1590567956078" duration="17678000" />
-      <workItem from="1590592107812" duration="3311000" />
+      <workItem from="1590592107812" duration="6159000" />
+      <workItem from="1590656640549" duration="963000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 02m 42s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 46m 19s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 04m 05s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 47m 35s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 10m 47s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 51m 02s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 35m 46s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 51m 32s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 36m 41s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 53m 18s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 37m 17s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 54m 30s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 38m 02s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 39m 42s.xml">
-      <configuration name="Case1Test.lC4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Case1Test_case6 - 2020.05.27 at 18h 42m 19s.xml">
+    <history-entry file="Case1Test_case6 - 2020.05.27 at 18h 55m 49s.xml">
       <configuration name="Case1Test.case6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 43m 15s.xml">
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 56m 32s.xml">
       <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Case1Test_lC4 - 2020.05.27 at 18h 57m 13s.xml">
+      <configuration name="Case1Test.lC4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Case1Test_case1 - 2020.05.28 at 14h 47m 03s.xml">
+      <configuration name="Case1Test.case1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118255000" />
+    <option name="totallyTimeSpent" value="122066000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18669528" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18884121" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -432,8 +437,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3057325" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21401274" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,16 +605,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case2Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case4Test.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case6Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
@@ -643,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC9Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="91" column="3" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="91" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC10Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -664,24 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#152#161#0" expanded="true" />
-            <element signature="e#255#264#0" expanded="true" />
-            <element signature="e#355#363#0" expanded="true" />
-            <element signature="e#469#477#0" expanded="true" />
-            <element signature="e#482#491#0" expanded="true" />
-            <element signature="e#579#588#0" expanded="true" />
-            <element signature="e#676#685#0" expanded="true" />
-            <element signature="e#772#781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC4Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -689,10 +659,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="107" column="49" lean-forward="true" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+        <state relative-caret-position="1245">
+          <caret line="107" column="49" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#455#456#0" expanded="true" />
@@ -701,30 +683,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="134" />
+        <state relative-caret-position="975">
+          <caret line="72" column="121" selection-start-line="72" selection-start-column="77" selection-end-line="72" selection-end-column="121" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/Case1Test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="344" column="141" selection-start-line="344" selection-start-column="141" selection-end-line="344" selection-end-column="141" />
+        <state relative-caret-position="255">
+          <caret line="17" column="98" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="17" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/LC9Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="91" column="3" selection-start-line="38" selection-start-column="2" selection-end-line="91" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/DiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7125">
+          <caret line="490" column="23" lean-forward="true" selection-start-line="490" selection-start-column="23" selection-end-line="490" selection-end-column="23" />
         </state>
       </provider>
     </entry>
