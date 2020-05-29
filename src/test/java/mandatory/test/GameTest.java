@@ -102,7 +102,6 @@ class GameTest {
         ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(1, 350, 499));
         ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(2, 351, 500));
 
-        ArrayList<Integer> invalidOutputs = new ArrayList<Integer>( Arrays.asList(4, 349, 498));
 
         for (int i = 0; i < validInputs.size(); i++) {
             game.playerLife.put("Player " + (i + 1), validInputs.get(i));
@@ -115,10 +114,6 @@ class GameTest {
                 if (key.equals("Player " + (i+1))) {
 
                     assertEquals(game.addLife("Player " + (i+1)), validOutputs.get(i));
-                    game.playerLife.put("Player " + (i + 1), validInputs.get(i));
-                    game.playerLife.put("Player " + (i + 1), validInputs.get(i));
-                    game.playerLife.put("Player " + (i + 1), validInputs.get(i));
-                    assertNotEquals(game.addLife("Player " + (i+1)), invalidOutputs.get(i));
 
                 }
             }
@@ -184,8 +179,6 @@ class GameTest {
                 if (key.equals("Player " + (i+1))) {
 
                     assertEquals(game.removeLife("Player " + (i+1)), validOutputs.get(i));
-
-
                 }
 
             }
@@ -215,14 +208,21 @@ class GameTest {
 
         ArrayList<Integer> validInputs = new ArrayList<>( Arrays.asList(1, 2, 3, 4, 5, 6));
 
-        for (int i = 0; i < validInputs.size(); i++) {
 
-            game.setPlayerAmount(validInputs.get(i));
-            int min = 1;
-            int max = validInputs.get(i);
-            int dice = game.rollDice(validInputs.get(i));
+        // We do it 50 times to ensure that the test doesn't just pass based on chance.
+        for (int j = 0; j < 50; j++) {
 
-            assertTrue(dice >= min && dice <= max);
+            for (int i = 0; i < validInputs.size(); i++) {
+
+                game.setPlayerAmount(validInputs.get(i));
+                int min = 1;
+                int max = validInputs.get(i);
+                int dice = game.rollDice(validInputs.get(i));
+
+                assertTrue(dice >= min && dice <= max);
+            }
+
         }
+
     }
 }

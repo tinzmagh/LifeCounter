@@ -551,6 +551,59 @@ public class SeleniumTest {
   }
 
 
+  @Test
+  public void plusLifeToMax() throws InterruptedException {
+
+
+      // Test name: LC_8
+      // Step # | name | target | value
+      // 1 | open | / |
+      driver.get("http://localhost:9000/");
+      // 2 | setWindowSize | 1440x877 |
+      driver.manage().window().setSize(new Dimension(1440, 877));
+      // 3 | click | id=players |
+      driver.findElement(By.id("players")).click();
+      // 4 | select | id=players | label=3
+      {
+        WebElement dropdown = driver.findElement(By.id("players"));
+        dropdown.findElement(By.xpath("//option[. = '3']")).click();
+      }
+      // 5 | click | css=.content |
+      driver.findElement(By.cssSelector(".content")).click();
+      // 6 | click | id=lifePoint |
+      driver.findElement(By.id("lifePoint")).click();
+      // 7 | type | id=lifePoint | 60
+      driver.findElement(By.id("lifePoint")).sendKeys("100");
+      // 8 | click | id=startButton |
+      driver.findElement(By.id("startButton")).click();
+      Thread.sleep(1000);
+      // 9 | click | id=plusPlayer2 |
+
+    for (int i = 0; i < 400; i++) {
+      driver.findElement(By.id("plusPlayer2")).click();
+
+    }
+
+    try {
+      driver.findElement(By.id("plusPlayer2")).click();
+      Thread.sleep(2000);
+    } catch (UnhandledAlertException f) {
+      try {
+        // 10 | AssertThat alert is correct|
+        String alert = driver.switchTo().alert().getText();
+        System.out.println(alert);
+        assertThat(alert, is("Maximum life reached"));
+        driver.switchTo().alert().accept();
+      } catch (NoAlertPresentException e) {
+        e.printStackTrace();
+      }
+    }
+
+      // 11 | click | css=.column2:nth-child(1) .button |
+      driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+  }
+
+
    // Roll dice???????
 //  @Test
 //  public void dice() throws InterruptedException {
