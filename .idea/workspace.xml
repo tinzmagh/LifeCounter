@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1367">
-              <caret line="604" lean-forward="true" selection-start-line="604" selection-end-line="604" />
+            <state relative-caret-position="159">
+              <caret line="589" lean-forward="true" selection-start-line="589" selection-end-line="589" />
             </state>
           </provider>
         </entry>
@@ -25,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="540">
               <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
             </state>
           </provider>
@@ -34,17 +34,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="276" column="22" lean-forward="true" selection-start-line="276" selection-start-column="22" selection-end-line="276" selection-end-column="22" />
+            <state relative-caret-position="435">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="173" column="9" lean-forward="true" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
+            <state relative-caret-position="2190">
+              <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1073#1074#0" expanded="true" />
@@ -67,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="100" column="24" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+            <state relative-caret-position="1365">
+              <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
@@ -81,12 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/Assertions.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
+            <state relative-caret-position="21450">
               <caret line="1521" selection-start-line="1521" selection-end-line="1521" />
-              <folding>
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/AssertThrows.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
+            <state relative-caret-position="360">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
@@ -283,7 +274,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590760664737" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590765226311" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -317,8 +308,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeleniumTest.plusLifeToMax">
-    <configuration name="GameTest.addLifeIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SeleniumTest.setLifeToMax">
+    <configuration name="SeleniumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -327,14 +318,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
-      <option name="METHOD_NAME" value="addLifeIncrement" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.dice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
+      <option name="METHOD_NAME" value="dice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.lowerLifeBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SeleniumTest.plusLife" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
@@ -343,40 +349,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
-      <option name="METHOD_NAME" value="lowerLifeBoundary" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.removeLifeDecrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
-      <option name="METHOD_NAME" value="removeLifeDecrement" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.rollDice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mandatory.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mandatory.test" />
-      <option name="MAIN_CLASS_NAME" value="mandatory.test.GameTest" />
-      <option name="METHOD_NAME" value="rollDice" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
+      <option name="METHOD_NAME" value="plusLife" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -398,6 +372,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeleniumTest.setLifeToMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mandatory.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mandatory.test" />
+      <option name="MAIN_CLASS_NAME" value="mandatory.test.SeleniumTest" />
+      <option name="METHOD_NAME" value="setLifeToMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="test" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="mandatory.test.TestApplication" />
@@ -407,11 +397,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SeleniumTest.setLifeToMax" />
+        <item itemvalue="JUnit.SeleniumTest" />
+        <item itemvalue="JUnit.SeleniumTest.plusLife" />
+        <item itemvalue="JUnit.SeleniumTest.dice" />
         <item itemvalue="JUnit.SeleniumTest.plusLifeToMax" />
-        <item itemvalue="JUnit.GameTest.rollDice" />
-        <item itemvalue="JUnit.GameTest.addLifeIncrement" />
-        <item itemvalue="JUnit.GameTest.removeLifeDecrement" />
-        <item itemvalue="JUnit.GameTest.lowerLifeBoundary" />
       </list>
     </recent_temporary>
   </component>
@@ -439,44 +429,45 @@
       <workItem from="1590567956078" duration="17678000" />
       <workItem from="1590592107812" duration="6159000" />
       <workItem from="1590656640549" duration="10615000" />
-      <workItem from="1590738820634" duration="12820000" />
+      <workItem from="1590738820634" duration="14586000" />
+      <workItem from="1590764092530" duration="980000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_addLifeIncrement - 2020.05.29 at 13h 53m 43s.xml">
-      <configuration name="GameTest.addLifeIncrement" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_dice - 2020.05.29 at 16h 53m 02s.xml">
+      <configuration name="SeleniumTest.dice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_addLifeIncrement - 2020.05.29 at 13h 55m 26s.xml">
-      <configuration name="GameTest.addLifeIncrement" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_dice - 2020.05.29 at 16h 53m 29s.xml">
+      <configuration name="SeleniumTest.dice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_addLifeIncrement - 2020.05.29 at 13h 58m 45s.xml">
-      <configuration name="GameTest.addLifeIncrement" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_dice - 2020.05.29 at 16h 55m 10s.xml">
+      <configuration name="SeleniumTest.dice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_addLifeIncrement - 2020.05.29 at 14h 00m 43s.xml">
-      <configuration name="GameTest.addLifeIncrement" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_dice - 2020.05.29 at 16h 56m 09s.xml">
+      <configuration name="SeleniumTest.dice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_removeLifeDecrement - 2020.05.29 at 14h 09m 41s.xml">
-      <configuration name="GameTest.removeLifeDecrement" configurationId="JUnit" />
+    <history-entry file="SeleniumTest - 2020.05.29 at 16h 59m 50s.xml">
+      <configuration name="SeleniumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_addLifeIncrement - 2020.05.29 at 14h 09m 50s.xml">
-      <configuration name="GameTest.addLifeIncrement" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_plusLife - 2020.05.29 at 17h 01m 24s.xml">
+      <configuration name="SeleniumTest.plusLife" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_rollDice - 2020.05.29 at 14h 11m 45s.xml">
-      <configuration name="GameTest.rollDice" configurationId="JUnit" />
+    <history-entry file="SeleniumTest - 2020.05.29 at 17h 07m 12s.xml">
+      <configuration name="SeleniumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_rollDice - 2020.05.29 at 14h 12m 08s.xml">
-      <configuration name="GameTest.rollDice" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.05.29 at 17h 10m 42s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_rollDice - 2020.05.29 at 14h 13m 04s.xml">
-      <configuration name="GameTest.rollDice" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.05.29 at 17h 11m 37s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeleniumTest_plusLifeToMax - 2020.05.29 at 15h 58m 03s.xml">
-      <configuration name="SeleniumTest.plusLifeToMax" configurationId="JUnit" />
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.05.29 at 17h 12m 24s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144538000" />
+    <option name="totallyTimeSpent" value="147284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -683,45 +674,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/AssertTrue.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="159">
+          <caret line="589" lean-forward="true" selection-start-line="589" selection-end-line="589" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="540">
           <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/Assertions.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="1521" selection-start-line="1521" selection-end-line="1521" />
+        <state relative-caret-position="435">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="35" />
           <folding>
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/AssertThrows.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="173" column="9" lean-forward="true" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
+        <state relative-caret-position="2190">
+          <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1073#1074#0" expanded="true" />
@@ -732,8 +714,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="100" column="24" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+        <state relative-caret-position="1365">
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#614#615#0" expanded="true" />
@@ -742,27 +724,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/Assertions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="276" column="22" lean-forward="true" selection-start-line="276" selection-start-column="22" selection-end-line="276" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="21450">
+          <caret line="1521" selection-start-line="1521" selection-end-line="1521" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/AssertThrows.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1367">
-          <caret line="604" lean-forward="true" selection-start-line="604" selection-end-line="604" />
+        <state relative-caret-position="360">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/AssertTrue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

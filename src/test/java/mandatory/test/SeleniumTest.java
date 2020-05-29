@@ -145,6 +145,7 @@ public class SeleniumTest {
       }
       // 9 | click | css=.content |
       driver.findElement(By.cssSelector(".content")).click();
+      Thread.sleep(1000);
     }
   }
 
@@ -188,6 +189,7 @@ public class SeleniumTest {
       driver.findElement(By.cssSelector("#okBtn1 > .fa")).click();
       // 12 | click | css=.column2:nth-child(1) .button |
       driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+      Thread.sleep(1000);
     }
   }
 
@@ -244,6 +246,7 @@ public class SeleniumTest {
       driver.findElement(By.cssSelector(".column:nth-child(2)")).click();
       // 13 | click | css=.column2:nth-child(1) .button |
       driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+      Thread.sleep(1000);
 
     }
   }
@@ -296,6 +299,7 @@ public class SeleniumTest {
       Thread.sleep(1000);
       // 14 | click | css=.column2:nth-child(1) .button |
       driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+      Thread.sleep(1000);
     }
   }
 
@@ -341,6 +345,7 @@ public class SeleniumTest {
       driver.findElement(By.id("plusPlayer2")).click();
       // 13 | click | id=plusPlayer2 |
       driver.findElement(By.id("plusPlayer2")).click();
+      Thread.sleep(2000);
       // 14 | checks if life amount is correct |
       String expectedLifeAmount = validAddLifeOutputs.get(i).toString();
       String lifeAmount2 = driver.findElement(By.id("lifeAmount2")).getText();
@@ -550,9 +555,10 @@ public class SeleniumTest {
 
   }
 
+  // case 10 - Test Description: Verify that 500 is the maximum life, and that more life can't be added.
 
   @Test
-  public void plusLifeToMax() throws InterruptedException {
+  public void setLifeToMax() throws InterruptedException {
 
 
       // Test name: LC_8
@@ -579,12 +585,15 @@ public class SeleniumTest {
       Thread.sleep(1000);
       // 9 | click | id=plusPlayer2 |
 
-    for (int i = 0; i < 400; i++) {
+    for (int i = 0; i < 399; i++) {
       driver.findElement(By.id("plusPlayer2")).click();
-
     }
 
+    Thread.sleep(1000);
+    driver.findElement(By.id("plusPlayer2")).click();
+
     try {
+      Thread.sleep(2000);
       driver.findElement(By.id("plusPlayer2")).click();
       Thread.sleep(2000);
     } catch (UnhandledAlertException f) {
@@ -601,46 +610,52 @@ public class SeleniumTest {
 
       // 11 | click | css=.column2:nth-child(1) .button |
       driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+    Thread.sleep(1000);
   }
 
+  // case 11 - Test Description: Verify that the outcome of roll dice, can only be between 1 and the amount of players.
 
-   // Roll dice???????
-//  @Test
-//  public void dice() throws InterruptedException {
-//    // Test name: dice
-//    // Step # | name | target | value
-//    // 1 | open | / |
-//    driver.get("http://localhost:9000/");
-//    // 2 | setWindowSize | 1440x877 |
-//    driver.manage().window().setSize(new Dimension(1440, 877));
-//    // 3 | click | id=players |
-//    driver.findElement(By.id("players")).click();
-//    // 4 | select | id=players | label=3
-//    {
-//      WebElement dropdown = driver.findElement(By.id("players"));
-//      dropdown.findElement(By.xpath("//option[. = '3']")).click();
-//    }
-//    // 5 | click | id=lifePoint |
-//    driver.findElement(By.id("lifePoint")).click();
-//    // 6 | type | id=lifePoint | 40
-//    driver.findElement(By.id("lifePoint")).sendKeys("40");
-//    // 7 | click | id=startButton |
-//    driver.findElement(By.id("startButton")).click();
-//    Thread.sleep(2000);
-//    // 8 | click | css=.center:nth-child(5) > .button |
-//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
-//    // 9 | click | css=.center:nth-child(5) > .button |
-//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
-//    // 10 | click | css=.center:nth-child(5) > .button |
-//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
-//    // 11 | click | css=.center:nth-child(5) > .button |
-//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
-//    // 12 | click | css=.center:nth-child(5) > .button |
-//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
-//    // 13 | click | css=.center:nth-child(5) > .button |
-//    driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
-//    // 14 | click | css=.column2:nth-child(1) .button |
-//    driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
-//  }
+  @Test
+  public void dice() throws InterruptedException {
+
+    ArrayList<Integer> validAmountOfPlayers = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5, 6));
+
+    for (int j = 0; j < validAmountOfPlayers.size(); j++) {
+
+
+      // Test name: dice
+      // Step # | name | target | value
+      // 1 | open | / |
+      driver.get("http://localhost:9000/");
+      // 2 | setWindowSize | 1440x877 |
+      driver.manage().window().setSize(new Dimension(1440, 877));
+      // 3 | click | id=players |
+      driver.findElement(By.id("players")).click();
+      // 4 | select | id=players | label=3
+      {
+        WebElement dropdown = driver.findElement(By.id("players"));
+        dropdown.findElement(By.xpath("//option[. = '" + validAmountOfPlayers.get(j) + "']")).click();
+      }
+      // 5 | click | id=lifePoint |
+      driver.findElement(By.id("lifePoint")).click();
+      // 6 | type | id=lifePoint | 40
+      driver.findElement(By.id("lifePoint")).sendKeys("40");
+      // 7 | click | id=startButton |
+      driver.findElement(By.id("startButton")).click();
+      Thread.sleep(2000);
+      // 8 | click | css=.center:nth-child(5) > .button |
+      for (int i = 0; i < 3; i++) {
+        driver.findElement(By.cssSelector(".center:nth-child(5) > .button")).click();
+
+        Thread.sleep(1000);
+        String text = driver.findElement(By.id("rollNo")).getText();
+        int number = Integer.parseInt(text);
+        assertTrue(number >= 1 && number <= validAmountOfPlayers.get(j));
+      }
+
+      driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
+      Thread.sleep(1000);
+    }
+  }
 
 }
