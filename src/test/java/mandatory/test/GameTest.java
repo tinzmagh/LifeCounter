@@ -1,9 +1,10 @@
 package mandatory.test;
 
+
+import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import org.junit.Rule;
-import org.junit.rules.ExpectedException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -11,12 +12,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
 
+    Game game = new Game();
+
     // MISSING
 //    ? - Test to check that the game board is over when life count is 0
 //    ? - The test to check start new game
 //    ? - The test to check life count adjustment
 //    ? - The test to check start ‘dice’ rolled and making sure the random number is between 1 and amount of players
 
+    @Before
+    public void setUp(){
+        game = new Game();
+    }
 
     @Test
     void addPlayers() {
@@ -24,8 +31,6 @@ class GameTest {
         ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
         ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
         ArrayList<Integer> invalidInputs = new ArrayList<Integer>( Arrays.asList(-1, 0, 7));
-
-        Game game = new Game();
 
         // Checking if valid inputs passes
 
@@ -49,8 +54,6 @@ class GameTest {
         ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(1, 2, 50, 99, 100));
         ArrayList<Integer> invalidInputs = new ArrayList<Integer>( Arrays.asList(-1, 0, 101, 149));
 
-        Game game = new Game();
-
         // Checking if valid inputs passes
 
         for(int i = 0; i<validInputs.size(); i++) {
@@ -70,11 +73,10 @@ class GameTest {
     @Test
     void addName() {
 
-        ArrayList<String> validInputs = new ArrayList<String>( Arrays.asList("martine", "VERONIQUE", "steFFen", "Phillip"));
-        ArrayList<String> validOutputs = new ArrayList<String>( Arrays.asList("martine", "VERONIQUE", "steFFen", "Phillip"));
-        ArrayList<String> invalidInputs = new ArrayList<String>( Arrays.asList("", "hanne123", "kar!", "F**k", "maaaaaaaaaaaaaaaaaartaaaaa"));
+        ArrayList<String> validInputs = new ArrayList<String>( Arrays.asList("martine magh", "VERONIQUE", "steFFen24", "P"));
+        ArrayList<String> validOutputs = new ArrayList<String>( Arrays.asList("martine magh", "VERONIQUE", "steFFen24", "P"));
+        ArrayList<String> invalidInputs = new ArrayList<String>( Arrays.asList("", "kar#", "stef@", "!", "maaaaaaaaaaaaaaaaarta"));
 
-        Game game = new Game();
 
         // Checking if valid inputs passes
 
@@ -92,58 +94,89 @@ class GameTest {
     }
 
     @Test
-    void addLife() {
+    void addLifeIncrement() {
 
-        // Checking if valid inputs passes
+        // Checking if valid inputs passes, and increments with 1.
 
-        Game game = new Game();
+        // Data provider
+        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(1, 350, 499));
+        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(2, 351, 500));
 
-        game.playerLife.put("Player 1", 0);
-        game.playerLife.put("Player 2", 1);
-        game.playerLife.put("Player 3", 350);
-        game.playerLife.put("Player 4", 499);
+        ArrayList<Integer> invalidOutputs = new ArrayList<Integer>( Arrays.asList(4, 349, 498));
 
-        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(1, 2, 351, 500));
-
+        for (int i = 0; i < validInputs.size(); i++) {
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+        }
 
         for(int i = 0; i <game.playerLife.size(); i++) {
             for(String key : game.getPlayerLife().keySet()) {
                 if (key.equals("Player " + (i+1))) {
 
                     assertEquals(game.addLife("Player " + (i+1)), validOutputs.get(i));
+                    game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+                    game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+                    game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+                    assertNotEquals(game.addLife("Player " + (i+1)), invalidOutputs.get(i));
+
                 }
             }
         }
+    }
 
+    @Test
+    void upperLifeBoundary(){
         // Checking if invalid inputs throws an exception
+        // Data provider
+        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(0, 500, 600));
 
-        Game game1 = new Game();
-        game1.playerLife.put("Player 1", 500);
-        game1.playerLife.put("Player 2", 600);
-        game1.playerLife.put("Player 3", 1050);
+        for (int i = 0; i < validInputs.size(); i++) {
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+        }
 
+        for(int i = 0; i <game.playerLife.size(); i++) {
+            int finalI = i + 1;
 
-        for(int i = 0; i <game1.playerLife.size(); i++) {
+            assertThrows(IllegalArgumentException.class, () -> game.addLife("Player " + (finalI)));
+        }
+    }
+
+    @Test
+    void lowerLifeBoundary(){
+        // Data provider
+        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(-1, -5, -100));
+
+        for (int i = 0; i < validInputs.size(); i++) {
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+        }
+
+        for(int i = 0; i <game.playerLife.size(); i++) {
             int finalI = i;
 
-            assertThrows(IllegalArgumentException.class, () -> game1.addLife("Player " + (finalI + 1)));
+            assertThrows(IllegalArgumentException.class, () -> game.removeLife("Player " + (finalI + 1)));
         }
 
     }
 
     @Test
-    void removeLife() {
+    void removeLifeDecrement() {
 
-        // Checking if valid inputs passes
+        // Checking if valid inputs passes, and decreases with 1.
 
-        Game game = new Game();
+        // Data providers
+        ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(500, 200, 1));
+        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(499, 199, 0));
 
-        game.playerLife.put("Player 1", 500);
-        game.playerLife.put("Player 2", 99);
-        game.playerLife.put("Player 3", 50);
-        game.playerLife.put("Player 4", 1);
-
-        ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(499, 98, 49, 0));
+        for (int i = 0; i < validInputs.size(); i++) {
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+            game.playerLife.put("Player " + (i + 1), validInputs.get(i));
+        }
 
 
         for(int i = 0; i <game.playerLife.size(); i++) {
@@ -152,23 +185,10 @@ class GameTest {
 
                     assertEquals(game.removeLife("Player " + (i+1)), validOutputs.get(i));
 
+
                 }
 
             }
-        }
-
-        // Checking if invalid inputs throws an exception
-
-        Game game1 = new Game();
-        game1.playerLife.put("Player 1", -1);
-        game1.playerLife.put("Player 2", -5);
-        game1.playerLife.put("Player 3", -100);
-
-
-        for(int i = 0; i <game1.playerLife.size(); i++) {
-            int finalI = i;
-
-            assertThrows(IllegalArgumentException.class, () -> game1.removeLife("Player " + (finalI + 1)));
         }
 
     }
@@ -177,8 +197,6 @@ class GameTest {
     void resetLife() {
 
         // Checking if valid inputs passes
-
-        Game game = new Game();
 
         game.setStartLife(100);
 
@@ -190,5 +208,21 @@ class GameTest {
         System.out.println(game.playerLife);
         assertEquals(game.resetLife(), 100);
 
+    }
+
+    @Test
+    void rollDice() {
+
+        ArrayList<Integer> validInputs = new ArrayList<>( Arrays.asList(1, 2, 3, 4, 5, 6));
+
+        for (int i = 0; i < validInputs.size(); i++) {
+
+            game.setPlayerAmount(validInputs.get(i));
+            int min = 1;
+            int max = validInputs.get(i);
+            int dice = game.rollDice(validInputs.get(i));
+
+            assertTrue(dice >= min && dice <= max);
+        }
     }
 }

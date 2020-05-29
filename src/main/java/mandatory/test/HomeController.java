@@ -51,8 +51,8 @@ public class HomeController {
     }
 
     @PostMapping("/roll-Dice")
-    public @ResponseBody int rollDice(int diceNumber){
-        return game.rollDice(diceNumber);
+    public @ResponseBody int rollDice(int playerAmount){
+        return game.rollDice(playerAmount);
     }
 
 

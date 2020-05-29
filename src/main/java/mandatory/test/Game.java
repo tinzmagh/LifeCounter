@@ -1,6 +1,7 @@
 package mandatory.test;
 
 import java.util.HashMap;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -72,7 +73,7 @@ public class Game {
 
     public int addPlayers(int playerInput){
 
-        if(playerInput <= 6 && playerInput > 0){
+        if(playerInput <= 6 && playerInput >= 2){
 
             for (int i = 0; i < playerInput; i++) {
                 playerLife.put("Player " + (i + 1), getLife());
@@ -110,7 +111,7 @@ public class Game {
     public String addName(String player, String name){
 
         //pattern to find if there is any special character in string
-        Pattern regex = Pattern.compile("[^a-zA-Z]");
+        Pattern regex = Pattern.compile("[^a-zA-Z0-9 ]");
         //matcher to find if there is any special character in string
         Matcher matcher = regex.matcher(name);
 
@@ -145,17 +146,30 @@ public class Game {
 
 
     public int addLife(String player) {
+//
+//        game1.playerLife.put("Player 1", 0);
+//        game1.playerLife.put("Player 2", 500);
+//        game1.playerLife.put("Player 3", 600);
 
         for(String key : getPlayerLife().keySet()) {
-            if(playerLife.get(key) + 1 > 500){
-                IllegalArgumentException exception = new IllegalArgumentException("Life can't go above 500!");
-                System.out.println("Life can't go above 500!");
-                throw exception;
-            }
+
             if (key.equals(player)) {
-                playerLife.put(key, playerLife.get(key) + 1);
-                System.out.println("added life to " + player);
-                setLife(playerLife.get(key));
+
+                if(playerLife.get(key) + 1 > 500){
+                    IllegalArgumentException exception = new IllegalArgumentException("Life can't go above 500!");
+                    System.out.println("Life can't go above 500!");
+                    throw exception;
+                }
+                if(playerLife.get(key) == 0){
+                    IllegalArgumentException exception = new IllegalArgumentException("Player has lost, and can't play anymore");
+                    System.out.println("Player has lost, and can't play anymore");
+                    throw exception;
+                }else{
+                    playerLife.put(key, playerLife.get(key) + 1);
+                    System.out.println("added life to " + player);
+                    setLife(playerLife.get(key));
+
+                }
             }
         }
         System.out.println(playerLife);
@@ -166,16 +180,21 @@ public class Game {
     public int removeLife(String player) {
 
         for(String key : getPlayerLife().keySet()) {
-            if(playerLife.get(key) - 1 < 0){
-                IllegalArgumentException exception = new IllegalArgumentException("Life can't go below 0!");
-                System.out.println("Life can't go below 0!");
-                throw exception;
-            }
-            if (key.equals(player)) {
-                playerLife.put(key, playerLife.get(key) -1);
-                System.out.println("removed life from " + player);
-                setLife(playerLife.get(key));
 
+            if (key.equals(player)) {
+
+                if(playerLife.get(key) - 1 < 0){
+                    IllegalArgumentException exception = new IllegalArgumentException("Life can't go below 0!");
+                    System.out.println("Life can't go below 0!");
+                    throw exception;
+                }
+
+                else {
+
+                    playerLife.put(key, playerLife.get(key) -1);
+                    System.out.println("removed life from " + player);
+                    setLife(playerLife.get(key));
+                }
             }
         }
 
@@ -195,14 +214,16 @@ public class Game {
         return life;
     }
 
-    public int rollDice(int diceNumber){
+    public int rollDice(int playerAmount){
 
-        if (diceNumber >= 1 && diceNumber <= playerAmount){
-            setDiceRollNumber(diceNumber);
-            System.out.println("Dice is within range");
-        }
-        return diceRollNumber;
+        Random random = new Random();
+        int min = 1;
+        int max = playerAmount;
+        int diceRoll = random.nextInt((max - min) + 1) + min;
+
+        System.out.println("Rolled dice: " + diceRoll);
+
+        return diceRoll;
     }
-
 
 }

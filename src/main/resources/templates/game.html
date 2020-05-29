@@ -63,15 +63,16 @@
 
     function rollDice() {
         var players = parseInt(document.getElementById("Players").innerHTML = localStorage.getItem("Players"));
-        var randomNumber = Math.floor(Math.random() * players) + 1;
-        $('h3#rollNo').text(randomNumber);
+        // var randomNumber = Math.floor(Math.random() * players) + 1;
+        // $('h3#rollNo').text(randomNumber);
         $.ajax({
             type: 'POST',
             url: '/roll-Dice',
-            data: {'diceNumber': randomNumber},
+            data: {'playerAmount': players},
             dataType: 'json',
             success: function (data) {
-                console.log("Rolled dice " + data);
+
+                $('h3#rollNo').text(data);
             }
         });
     }

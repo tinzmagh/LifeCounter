@@ -28,9 +28,9 @@ public class SeleniumTest {
     DesiredCapabilities dc = new DesiredCapabilities();
     dc.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
     driver = new ChromeDriver(dc);
-
-
   }
+
+
   @After
   public void tearDown() {
     driver.quit();
