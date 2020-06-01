@@ -295,7 +295,7 @@ public class SeleniumTest {
       // 13 | checks if life amount is correct |
       String expectedLifeAmount = validRemoveLifeOutputs.get(i).toString();
       String lifeAmount2 = driver.findElement(By.id("lifeAmount1")).getText();
-      Assert.assertTrue("Your error message", lifeAmount2.contains(expectedLifeAmount));
+      Assert.assertTrue("Error in minusLife", lifeAmount2.contains(expectedLifeAmount));
       Thread.sleep(1000);
       // 14 | click | css=.column2:nth-child(1) .button |
       driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();
@@ -349,7 +349,7 @@ public class SeleniumTest {
       // 14 | checks if life amount is correct |
       String expectedLifeAmount = validAddLifeOutputs.get(i).toString();
       String lifeAmount2 = driver.findElement(By.id("lifeAmount2")).getText();
-      Assert.assertTrue("Your error message", lifeAmount2.contains(expectedLifeAmount));
+      Assert.assertTrue("Error in plusLife", lifeAmount2.contains(expectedLifeAmount));
       Thread.sleep(1000);
       // 15 | click | css=.column2:nth-child(1) .button |
       driver.findElement(By.cssSelector(".column2:nth-child(1) .button")).click();

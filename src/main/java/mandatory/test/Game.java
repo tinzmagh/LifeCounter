@@ -139,17 +139,12 @@ public class Game {
         }
 
         System.out.println("added name: " + name + ", to " + player);
-//        System.out.println(playerNames);
         return name;
     }
 
 
 
     public int addLife(String player) {
-//
-//        game1.playerLife.put("Player 1", 0);
-//        game1.playerLife.put("Player 2", 500);
-//        game1.playerLife.put("Player 3", 600);
 
         for(String key : getPlayerLife().keySet()) {
 

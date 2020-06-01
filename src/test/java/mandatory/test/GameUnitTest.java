@@ -22,6 +22,8 @@ class GameUnitTest {
 
     @Test
     void addPlayers() {
+        // Testing assertEquals on valid
+        // Testing assertThrows on invalid
 
         ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
         ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(2, 4, 6));
@@ -44,6 +46,8 @@ class GameUnitTest {
 
     @Test
     void addStartLife() {
+        // Testing assertEquals on valid
+        // Testing assertThrows on invalid
 
         ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(1, 2, 50, 99, 100));
         ArrayList<Integer> validOutputs = new ArrayList<Integer>( Arrays.asList(1, 2, 50, 99, 100));
@@ -67,6 +71,8 @@ class GameUnitTest {
 
     @Test
     void addName() {
+        // Testing assertEquals on valid
+        // Testing assertThrows on invalid
 
         ArrayList<String> validInputs = new ArrayList<String>( Arrays.asList("martine magh", "VERONIQUE", "steFFen24", "P"));
         ArrayList<String> validOutputs = new ArrayList<String>( Arrays.asList("martine magh", "VERONIQUE", "steFFen24", "P"));
@@ -117,6 +123,7 @@ class GameUnitTest {
 
     @Test
     void upperLifeBoundary(){
+
         // Checking if invalid inputs throws an exception
         // Data provider
         ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(0, 500, 600));
@@ -136,6 +143,7 @@ class GameUnitTest {
 
     @Test
     void lowerLifeBoundary(){
+        // Checking if invalid inputs throws an exception
         // Data provider
         ArrayList<Integer> validInputs = new ArrayList<Integer>( Arrays.asList(-1, -5, -100));
 
@@ -175,16 +183,14 @@ class GameUnitTest {
 
                     assertEquals(game.removeLife("Player " + (i+1)), validOutputs.get(i));
                 }
-
             }
         }
-
     }
 
     @Test
     void resetLife() {
 
-        // Checking if valid inputs passes
+        // Checking if resetLife resets to the start life
 
         game.setStartLife(100);
 
@@ -201,6 +207,8 @@ class GameUnitTest {
     @Test
     void rollDice() {
 
+        // Checks that the dice roll is in between 1 and the amount of players
+
         ArrayList<Integer> validInputs = new ArrayList<>( Arrays.asList(1, 2, 3, 4, 5, 6));
 
 
@@ -216,8 +224,6 @@ class GameUnitTest {
 
                 assertTrue(dice >= min && dice <= max);
             }
-
         }
-
     }
 }
