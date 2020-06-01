@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GameTest {
+class GameUnitTest {
 
     Game game = new Game();
 
