@@ -372,7 +372,7 @@
         if(id == 'okBtn1'){
             var input = $('input#playerInput1').val();
 
-            if(re.test(input) && input != ""){
+            if(re.test(input) && input != "" && input.length < 16){
 
                 $('p#playerName1').text(input);
                 document.getElementById('playerInput1').style.display = 'none';
@@ -390,7 +390,7 @@
         if(id == 'okBtn2'){
             var input = $('input#playerInput2').val();
 
-            if(re.test(input) && input != ""){
+            if(re.test(input) && input != "" && input.length < 16){
 
                 $('p#playerName2').text(input);
                 document.getElementById('playerInput2').style.display = 'none';
@@ -407,7 +407,7 @@
         if(id == 'okBtn3'){
             var input = $('input#playerInput3').val();
 
-            if(re.test(input) && input != ""){
+            if(re.test(input) && input != "" && input.length < 16){
                 $('p#playerName3').text(input);
                 document.getElementById('playerInput3').style.display = 'none';
                 document.getElementById('playerName3').style.display = 'block';
@@ -424,7 +424,7 @@
         if(id == 'okBtn4'){
             var input = $('input#playerInput4').val();
 
-            if(re.test(input) && input != ""){
+            if(re.test(input) && input != "" && input.length < 16){
                 $('p#playerName4').text(input);
                 document.getElementById('playerInput4').style.display = 'none';
                 document.getElementById('playerName4').style.display = 'block';
@@ -441,7 +441,7 @@
         if(id == 'okBtn5'){
             var input = $('input#playerInput5').val();
 
-            if(re.test(input) && input != ""){
+            if(re.test(input) && input != "" && input.length < 16){
 
                 $('p#playerName5').text(input);
                 document.getElementById('playerInput5').style.display = 'none';
@@ -459,7 +459,7 @@
         if(id == 'okBtn6'){
             var input = $('input#playerInput6').val();
 
-            if(re.test(input) && input != ""){
+            if(re.test(input) && input != "" && input.length < 16){
                 $('p#playerName6').text(input);
                 document.getElementById('playerInput6').style.display = 'none';
                 document.getElementById('playerName6').style.display = 'block';

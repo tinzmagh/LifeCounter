@@ -67,6 +67,8 @@ class GameUnitTest {
             assertThrows(IllegalArgumentException.class, () -> game.addStartLife(invalidInputs.get(finalI)));
         }
 
+
+
     }
 
     @Test

@@ -96,7 +96,7 @@ public class Game {
 
     public int addStartLife(int lifeInput){
 
-        if(lifeInput <= 100 && lifeInput > 0){
+        if(lifeInput <= 100 && lifeInput > 0 && lifeInput % 1 == 0){
             setLife(lifeInput);
             setStartLife(lifeInput);
         }

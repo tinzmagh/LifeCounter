@@ -63,6 +63,11 @@
 
         $("#startButton").click(function() {
 
+            if($("#lifePoint").val() % 1 != 0){
+                alert("Has to be a full number")
+
+            }
+
             if ($("#lifePoint").val() > 100) {
                 alert("Invalid start life\nPlease choose a number between 1-100");
                 // window.location = "/game"
@@ -74,7 +79,7 @@
                 throw "life cannnot be under 1"
             }
 
-            if($("#lifePoint").val() < 101 && $("#lifePoint").val() > 0) {
+            if($("#lifePoint").val() < 101 && $("#lifePoint").val() > 0  && $("#lifePoint").val() % 1 ===0) {
                 saveLife();
             }
         })

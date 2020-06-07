@@ -136,7 +136,7 @@ public class SeleniumTest {
         Thread.sleep(2000);
         String alert = driver.switchTo().alert().getText();
         System.out.println(alert);
-      // 8 | assertAlert | The maximum amount of start life is 100. Please choose a smaller number. |
+      // 8 | assertAlert | Invalid start life. Please choose a number between 1-100 |
         assertThat(alert, is("Invalid start life\nPlease choose a number between 1-100"));
         driver.switchTo().alert().accept();
 
@@ -198,7 +198,7 @@ public class SeleniumTest {
   @Test
   public void invalidNames() throws InterruptedException {
 
-    ArrayList<String> invalidNames = new ArrayList<String>(Arrays.asList("Ka!!?", "", "he**l", "mart..."));
+    ArrayList<String> invalidNames = new ArrayList<String>(Arrays.asList("Ka!!?", "", "he**l", "mart...", "laaaaaaaaaaaaaaaasse"));
 
     for (int i = 0; i < invalidNames.size(); i++) {
 
@@ -585,15 +585,13 @@ public class SeleniumTest {
       Thread.sleep(1000);
       // 9 | click | id=plusPlayer2 |
 
-    for (int i = 0; i < 399; i++) {
+    for (int i = 0; i < 400; i++) {
       driver.findElement(By.id("plusPlayer2")).click();
     }
 
-    Thread.sleep(1000);
-    driver.findElement(By.id("plusPlayer2")).click();
+
 
     try {
-      Thread.sleep(2000);
       driver.findElement(By.id("plusPlayer2")).click();
       Thread.sleep(2000);
     } catch (UnhandledAlertException f) {

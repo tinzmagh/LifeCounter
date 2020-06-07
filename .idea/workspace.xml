@@ -11,13 +11,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4230">
-              <caret line="297" column="83" selection-start-line="297" selection-start-column="83" selection-end-line="297" selection-end-column="83" />
+            <state relative-caret-position="8745">
+              <caret line="598" column="44" selection-start-line="598" selection-start-column="44" selection-end-line="598" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -25,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="127" column="53" lean-forward="true" selection-start-line="127" selection-start-column="53" selection-end-line="127" selection-end-column="53" />
+            <state relative-caret-position="242">
+              <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+            <state relative-caret-position="169">
+              <caret line="117" column="32" lean-forward="true" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1073#1074#0" expanded="true" />
@@ -51,8 +54,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/game.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1876">
+            <state relative-caret-position="15">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3508">
+              <caret line="462" column="47" lean-forward="true" selection-start-line="462" selection-start-column="47" selection-end-line="462" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1366">
+            <state relative-caret-position="60">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
@@ -69,12 +91,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2565">
-              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="1005">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,11 +140,11 @@
         <option value="$PROJECT_DIR$/src/main/java/mandatory/test/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/mandatory/test/TestApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/mandatory/test/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
         <option value="$PROJECT_DIR$/src/test/java/mandatory/test/GameUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/game.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java" />
       </list>
     </option>
   </component>
@@ -141,8 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,6 +260,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,7 +272,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591013841793" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591552924389" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -375,8 +395,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SeleniumTest" />
-        <item itemvalue="JUnit.GameUnitTest" />
         <item itemvalue="JUnit.SeleniumTest.setLifeToMax" />
+        <item itemvalue="JUnit.GameUnitTest" />
         <item itemvalue="JUnit.SeleniumTest.plusLife" />
         <item itemvalue="JUnit.SeleniumTest.dice" />
       </list>
@@ -408,29 +428,12 @@
       <workItem from="1590656640549" duration="10615000" />
       <workItem from="1590738820634" duration="14586000" />
       <workItem from="1590764092530" duration="2245000" />
-      <workItem from="1591006754587" duration="1849000" />
+      <workItem from="1591006754587" duration="2508000" />
+      <workItem from="1591362380545" duration="3476000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SeleniumTest_dice - 2020.05.29 at 16h 56m 09s.xml">
-      <configuration name="SeleniumTest.dice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumTest - 2020.05.29 at 16h 59m 50s.xml">
-      <configuration name="SeleniumTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumTest_plusLife - 2020.05.29 at 17h 01m 24s.xml">
-      <configuration name="SeleniumTest.plusLife" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumTest - 2020.05.29 at 17h 07m 12s.xml">
-      <configuration name="SeleniumTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumTest_setLifeToMax - 2020.05.29 at 17h 10m 42s.xml">
-      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SeleniumTest_setLifeToMax - 2020.05.29 at 17h 11m 37s.xml">
-      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SeleniumTest_setLifeToMax - 2020.05.29 at 17h 12m 24s.xml">
       <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
     </history-entry>
@@ -443,25 +446,43 @@
     <history-entry file="GameUnitTest - 2020.06.01 at 14h 13m 31s.xml">
       <configuration name="GameUnitTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SeleniumTest - 2020.06.01 at 14h 17m 52s.xml">
+      <configuration name="SeleniumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameUnitTest - 2020.06.07 at 19h 53m 00s.xml">
+      <configuration name="GameUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.06.07 at 19h 55m 54s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.06.07 at 19h 56m 36s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.06.07 at 19h 57m 22s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeleniumTest_setLifeToMax - 2020.06.07 at 19h 57m 53s.xml">
+      <configuration name="SeleniumTest.setLifeToMax" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150398000" />
+    <option name="totallyTimeSpent" value="154533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19384836" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983871" visible="true" weight="0.19670959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5016129" side_tool="true" weight="0.19670959" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26496816" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21019109" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,13 +649,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/InvalidStartLifeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/InvalidStartLifeTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/TestApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -659,36 +674,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/game.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1876">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1366">
+        <state relative-caret-position="60">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="92" column="30" lean-forward="true" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="110" column="49" lean-forward="true" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
+        <state relative-caret-position="3508">
+          <caret line="462" column="47" lean-forward="true" selection-start-line="462" selection-start-column="47" selection-end-line="462" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -702,39 +722,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mandatory/test/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="127" column="53" lean-forward="true" selection-start-line="127" selection-start-column="53" selection-end-line="127" selection-end-column="53" />
+        <state relative-caret-position="169">
+          <caret line="117" column="32" lean-forward="true" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/GameUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="1005">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mandatory/test/SeleniumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4230">
-          <caret line="297" column="83" selection-start-line="297" selection-start-column="83" selection-end-line="297" selection-end-column="83" />
+        <state relative-caret-position="8745">
+          <caret line="598" column="44" selection-start-line="598" selection-start-column="44" selection-end-line="598" selection-end-column="44" />
         </state>
       </provider>
     </entry>
